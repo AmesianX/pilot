@@ -1,0 +1,1 @@
+"Z:\D\Downloads\DelphiCodeCoverageWizard_v0.3\CodeCoverage.exe" -e "Z:\D\Projects\Pilot\Projects\전자메일 추출\ExtractEMail.dpr" -m "" -uf dcov_units.lst -spf dcov_paths.lst -od "Z:\D\Projects\Pilot\Projects\전자메일 추출\" -lt

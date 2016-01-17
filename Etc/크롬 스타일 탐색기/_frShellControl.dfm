@@ -1,0 +1,67 @@
+object frShellControl: TfrShellControl
+  Left = 0
+  Top = 0
+  Width = 636
+  Height = 463
+  Color = clBtnFace
+  ParentBackground = False
+  ParentColor = False
+  TabOrder = 0
+  object Splitter1: TSplitter
+    Left = 285
+    Top = 0
+    Height = 463
+    ExplicitLeft = 316
+    ExplicitTop = 180
+    ExplicitHeight = 100
+  end
+  object ShellTreeView: TShellTreeView
+    Left = 0
+    Top = 0
+    Width = 285
+    Height = 463
+    ObjectTypes = [otFolders]
+    Root = 'rfDesktop'
+    ShellListView = ShellListView
+    UseShellImages = True
+    Align = alLeft
+    AutoRefresh = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Indent = 19
+    ParentColor = False
+    ParentFont = False
+    RightClickSelect = True
+    ShowRoot = False
+    TabOrder = 0
+  end
+  object ShellListView: TShellListView
+    Left = 288
+    Top = 0
+    Width = 348
+    Height = 463
+    AutoRefresh = True
+    ObjectTypes = [otFolders, otNonFolders]
+    Root = 'rfDesktop'
+    ShellTreeView = ShellTreeView
+    Sorted = True
+    Align = alClient
+    ReadOnly = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    HideSelection = False
+    MultiSelect = True
+    ParentFont = False
+    TabOrder = 1
+    ExplicitLeft = 330
+    ExplicitTop = 162
+    ExplicitWidth = 250
+    ExplicitHeight = 150
+  end
+end
