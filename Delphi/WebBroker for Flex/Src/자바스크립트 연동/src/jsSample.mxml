@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="604" height="350" initialize="init()">
+	
+    <mx:TextInput x="10" y="10" id="txtName" width="189.5"/>
+    <mx:Button x="207.5" y="10" label="자바스크립트로 보내기" id="btnSendToJS" width="146" height="24" click="clickHandler(event)"/>
+    <mx:TextArea id="txtMsg" x="10" y="57" text="text" width="580" height="283"/>
+
+    <mx:Script>
+    <![CDATA[
+        public function init():void{
+            txtMsg.text += "초기화중...\r";
+            if( ExternalInterface.available ){
+                ExternalInterface.addCallback("sendToActionScript", receivedFromJavaScript);
+            }
+            else{
+                txtMsg.text += "External Interface를 사용할 수 없음\r";
+            }
+
+        	var Msg : String = ExternalInterface.call("getUserID"); 
+            txtMsg.text = Msg + "!";
+        }     
+
+        private function receivedFromJavaScript(value:String):void{
+            txtMsg.text += "JavaScript says: " + value + "\r";
+        }
+
+        private function clickHandler(event:MouseEvent) :void{
+            if (ExternalInterface.available){
+                ExternalInterface.call("sendToJavaScript", txtName.text);
+                txtName.text ="";
+            }
+        }
+      ]]>
+    </mx:Script>
+    
+</mx:Application>

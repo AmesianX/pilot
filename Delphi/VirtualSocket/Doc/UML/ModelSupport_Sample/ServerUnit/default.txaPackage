@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <node uin="0ch027rb5xr_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="TextServer" />
+    <link uin="yx2hqyf0ywh_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::0ch027rb5xr_n" role="Client" />
+      <participant referencedUin="delphi:e_class:src:Sample:Base.TVirtualSocketServer" role="Supplier" />
+    </link>
+  </node>
+  <node uin="z03pa3yo41i_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="CamServer" />
+    <link uin="f56n6t39u2g_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::z03pa3yo41i_n" role="Client" />
+      <participant referencedUin="delphi:e_class:src:Sample:Base.TVirtualSocketServer" role="Supplier" />
+    </link>
+  </node>
+  <node uin="tqw6ess9q7k_n">
+    <property name="$metaclass" value="Object" />
+    <property name="$name" value="DeskCamServer" />
+    <link uin="m79wrkpck3n_l">
+      <property name="$metaclass" value="Dependency Link" />
+      <property name="$name" value="Dependency Link1" />
+      <participant referencedUin="design:node:::tqw6ess9q7k_n" role="Client" />
+      <participant referencedUin="delphi:e_class:src:Sample:Base.TVirtualSocketServer" role="Supplier" />
+    </link>
+  </node>
+</nodeSet>

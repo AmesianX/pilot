@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.373,C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas=D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\_fmMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.373,C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.dfm=D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\_fmMain.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.860,C:\Users\Ryu\Documents\RAD Studio\Projects\Project1.dproj=D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\Sample.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.807,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.521,=D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.054,D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\Unit1.pas=D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\_frMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.054,D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\Unit1.dfm=D:\Projects\Pilot\Delphi\Frame 구멍 뚫기 실험\_frMain.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

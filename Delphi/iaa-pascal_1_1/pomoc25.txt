@@ -1,0 +1,50 @@
+###linia0
+[###deklaracja zmiennych###]
+var
+i
+,
+j
+:
+integer
+;
+###linia1
+[###pocz¹tek bloku###]
+begin
+###linia2
+[###pêtla###]
+for
+i
+[###operacja przypisania###]
+:=
+1
+to
+200
+do
+###linia3
+[###pocz¹tek bloku###]
+begin
+###linia4
+j
+[###operacja przypisania###]
+:=
+1
+;
+###linia5
+j
+[###operacja przypisania###]
+:=
+2
+;
+###linia6
+[###koniec bloku###]
+end
+;
+###linia7
+writeln
+(
+'kurwaaaaaaaaa'
+)
+;
+###linia8
+end.
+[###koniec programu###]

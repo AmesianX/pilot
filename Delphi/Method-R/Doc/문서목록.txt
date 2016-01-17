@@ -1,0 +1,77 @@
+0. 개발 프로세스 이전 활동
+   0.1. RFP
+   0.2. 프로그램 개발 계획서
+
+   * 제안서 및 계약서 등
+
+1. 업무분석
+   A.0. 요구사항 명세서
+   A.1. 업무분석 보고서
+   A.2. 기술분석
+   A.3. 프로젝트 추진 일정
+
+   Z.1. 기능분석
+   Z.2. 구조분석
+   Z.3. 동적분석
+   Z.0. Review 보고서
+
+2. 상황분석
+   B.1. 상황분석
+   B.2. 시장분석
+   B.3. Critical Success Factor
+   B.4. 전략계획 확정
+   Z.3. Review 보고서
+
+3. 프로세스 설계
+   C.1. 업무처리 분할도 (PBS)
+   C.2. Process List
+   C.3. 프로젝트 세부 일정 (WBS)
+
+   Z.1. 기능분석
+   Z.2. 구조분석
+   Z.3. 동적분석
+   Z.0. Review 보고서
+
+4. 시스템 설계
+   D.1. 데이터 분석 (Process Specification)
+   D.2. ERD
+   D.3. Data Flow Diagram
+   D.4. Table Layout
+   D.5. SQL Scripts
+   D.6. Navigation Diagram
+   D.7. Screen Layout
+   D.8. Report Layout
+
+   Z.1. 기능분석
+   Z.2. 구조분석
+   Z.3. 동적분석
+   Z.0. Review 보고서
+
+5. 시스템 구축
+   E.1. Prototype 개발
+   E.2. 단위 테스트
+   E.3. 통합 테스트
+   E.4. 인수 테스트
+
+   Z.1. 기능분석
+   Z.2. 구조분석
+   Z.3. 동적분석
+   Z.0. Review 보고서
+
+6. 프로젝트 종료
+   F.1. 메뉴얼 작성
+   F.2. 사용법 교육
+   Z.3. Review 보고서
+
+7. 유지/보수
+
+8. 기타
+   Z.0. Review 보고서
+   Z.1. 기능분석
+   Z.2. 구조분석
+   Z.3. 동적분석
+   Z.4. 용어사전
+   Z.5. 요구사항 변경 기록
+   Z.6. Story Borad
+   Z.11. 프로토콜 기능설계
+   Z.12. 프로토콜 동적설계

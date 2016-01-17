@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	제작자 : 지용호(http://blog.jidolstar.com)
+	제작일: 2007-12-07
+	프로그램 설명 : 로그인 폼 Test
+-->
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	creationComplete="confirmSessionStatus()" viewSourceURL="srcview/index.html">
+	
+	<!--
+	************************************************ 
+		states 
+	************************************************
+	-->
+	<mx:states>
+		<!-- State 로그인 완료시	-->
+		<mx:State name="loginComplete">
+			<mx:AddChild relativeTo="{loginPanel}" position="lastChild">
+				<mx:target>
+					<mx:DataGrid id="dgData" width="100%" height="100%" dataProvider="{httpServLogin.lastResult.employee}">
+			            <mx:columns>
+			                <mx:DataGridColumn dataField="name" headerText="Name"/>
+			                <mx:DataGridColumn dataField="phone" headerText="Phone"/>
+			                <mx:DataGridColumn dataField="email" headerText="Email"/>
+			            </mx:columns>
+					</mx:DataGrid>
+				</mx:target>
+			</mx:AddChild>
+			<mx:AddChild relativeTo="{loginBar}" position="lastChild">
+				<mx:target>
+					<mx:Button id="btnLogout" label="LogOut" click="tryToLogout();"/>
+				</mx:target>
+			</mx:AddChild>
+			<mx:SetProperty target="{loginPanel}" name="title" value="Login Complete"/>
+			<mx:SetProperty target="{loginForm}" name="visible" value="false"/>
+			<mx:SetProperty target="{loginForm}" name="includeInLayout" value="false"/>
+			<mx:SetProperty target="{btnLogin}" name="visible" value="false"/>
+			<mx:SetProperty target="{btnLogin}" name="includeInLayout" value="false"/>
+		</mx:State>
+	</mx:states> 
+	
+	<!--
+	************************************************ 
+		transitions 
+	************************************************
+	-->	
+	<mx:transitions>
+		<!-- Transition : 로그인 완료	-->	
+		<mx:Transition id="toLoginComplete" fromState="*" toState="loginComplete">
+			<mx:Parallel targets="{[loginPanel,loginForm, btnLogin, dgData, btnLogout]}">
+					<mx:Blur duration="350" blurXFrom="0" blurXTo="10" blurYFrom="0" blurYTo="10" targets="{[loginForm, btnLogin]}"/>
+					<mx:Blur duration="350" blurXFrom="10" blurXTo="0" blurYFrom="10" blurYTo="0" targets="{[btnLogout]}"/>
+					<mx:Resize target="{loginPanel}"/>
+					<mx:Fade duration="350" alphaFrom="0" alphaTo="1" targets="{[dgData]}"/>
+					<mx:SetPropertyAction name="visible"/>				
+					<mx:SetPropertyAction name="includeInLayout"/>	
+					<mx:AddChildAction/>
+			</mx:Parallel>
+		</mx:Transition>
+
+		<!-- Transition : 로그인 화면	-->	
+		<mx:Transition id="toLoginForm" fromState="*" toState="*">
+			<mx:Parallel targets="{[loginPanel,loginForm, btnLogin, btnLogout,dgData]}">
+				<mx:RemoveChildAction/>
+				<mx:Blur duration="350" blurXFrom="10" blurXTo="0" blurYFrom="10" blurYTo="0" targets="{[loginForm, btnLogin]}"/>
+				<mx:Fade duration="350" alphaFrom="0" alphaTo="1" targets="{[dgData]}"/>
+				<mx:SetPropertyAction name="includeInLayout"/>				
+				<mx:SetPropertyAction name="visible"/>				
+				<mx:Resize target="{loginPanel}"/>
+			</mx:Parallel>
+		</mx:Transition>		
+	</mx:transitions>
+
+	<!--
+	************************************************ 
+		Default UI
+	************************************************
+	-->	
+	<mx:Panel id="loginPanel"  title="Login" 
+		horizontalScrollPolicy="off" verticalScrollPolicy="off"
+        paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10" 
+        x="10" y="10" width="400">
+		<mx:Form id="loginForm">
+			<mx:FormItem label="ID">
+				<mx:TextInput id="txtID"/>
+			</mx:FormItem>
+			<mx:FormItem label="PW">
+				<mx:TextInput id="txtPW" displayAsPassword="true"/>
+			</mx:FormItem>
+		</mx:Form>	
+        <mx:ControlBar id="loginBar">
+            <mx:Button label="Login" id="btnLogin" click="tryToLogin();"/>
+        </mx:ControlBar>
+	</mx:Panel>
+	
+	<!--
+	************************************************ 
+		HttpServce 로그인 & 로그아웃
+	************************************************
+	-->	
+	<mx:HTTPService id="httpServLogin" method="get" resultFormat="e4x" url="{loginURL}" result="loginHandler(event)" fault="loginHandler(event)"/>
+	<mx:HTTPService id="httpServLogout" method="get" resultFormat="e4x" url="{logoutURL}" result="logoutHandler(event)" fault="logoutHandler(event)"/>
+	
+	<mx:Script>
+		<![CDATA[
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.controls.Alert;
+
+			//최초 프로그램 로딩후 로그인 중인지 확인(Session 인증된 상태인지 확인하기 위한 플래그) 			
+			private var bConfirmSession:Boolean = true;
+			
+			//로그인 & 로그아웃 접속 URL
+			[Bindable] private var loginURL:String = "http://jidolstar.com/flexlogin/login.php";
+			[Bindable] private var logoutURL:String = "http://jidolstar.com/flexlogin/logout.php";
+			
+			//로그인 상태인지 서버측에 확인한다.
+			//Application creationComplete 이벤트시 호출됨
+			private function confirmSessionStatus():void
+			{
+				httpServLogin.send( null );
+			}
+			
+			// 로그인 시도
+			// id와 pw를 http Request
+			private function tryToLogin():void
+			{
+				var params:Object = new Object;
+				params.id = txtID.text;
+				params.pw = txtPW.text;
+				httpServLogin.send( params );
+			}
+			
+			// 로그아웃 시도
+			private function tryToLogout():void
+			{
+				httpServLogout.send( null );
+			}
+
+			// 로그인 시도 후 결과 			
+			private function loginHandler( event:Event ):void
+			{
+				switch( event.type )
+				{
+					//접속 문제가 있을때.
+					case ResultEvent.RESULT:
+						var login:String = event.target.lastResult.login;
+						
+						//success
+						if( login == "success" )
+						{
+							txtID.text ="";
+							txtPW.text ="";
+							this.currentState = "loginComplete";
+						}
+						//fail
+						else 
+						{
+							if( !bConfirmSession )
+								Alert.show("ID or password is not correct", "Error");
+						}
+						
+						break;
+					
+					//접속 문제가 있을때.
+					case FaultEvent.FAULT:
+						if( bConfirmSession )
+							Alert.show("Failed server connection, message :" + event.toString(), "Error");
+						else
+							Alert.show("Failed Login, message :" + event.toString(), "Error");
+						break;
+				}
+				
+				//Session 확인 flag를 false로 해서 다음에 로그인시 id,pw가 틀리는 경우 메세지를 보여줌
+				bConfirmSession = false;
+			}
+			
+			// 로그아웃 시도 후 결과 			
+			private function logoutHandler( event:Event ):void
+			{
+				switch( event.type )
+				{
+					//Success
+					case ResultEvent.RESULT:
+						txtID.text ="";
+						txtPW.text ="";
+						this.currentState = "";
+						break;
+					//서버 접속 실패
+					case FaultEvent.FAULT:
+						Alert.show("Failed Logout, message :" + event.toString(), "Error");
+						break;
+				}
+			}			
+		]]>
+	</mx:Script>
+
+	
+</mx:Application>

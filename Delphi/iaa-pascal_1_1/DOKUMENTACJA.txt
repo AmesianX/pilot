@@ -1,0 +1,413 @@
+S£OWA KLUCZOWE
+S³owami kluczowymi w programie s¹:
+- begin
+- do
+- end
+- for
+- if
+- program
+- then
+- to
+ 
+S£OWA ZASTRZE¯ONE: 
+S³owa zastrze¿one to takie, które nie mog¹ byæ u¿ywane w nazwach zmiennych i nazwie programu. S¹ to:
+- begin
+- do
+- end
+- for
+- if
+- program
+- read
+- readln
+- then
+- to
+- var
+- write
+- writeln
+ 
+ 
+PÊTLE:
+W programie mozliwe jest u¿ycie pêtli. Dostêpna jest pêtla typu 
+for .. to .. do
+Pêtle mo¿na zagnie¿d¿aæ.
+
+Przyk³ad:
+
+var a,b,c:integer;
+begin
+    for a:=1 to 3 do
+        for b:=1 to 2 do
+        begin
+            writeln(tekst');
+            for c:=1 to 2 do
+                writeln(a);
+        end;
+end.
+ 
+ŒREDNIK 
+Œrednik ; jest separatorem, który musi znaleŸæ siê po ka¿dej instrukcji
+ 
+PRZECINEK 
+Przecinek jest separatorem, który oddziela od siebie deklarowane zmienne jednego typu.
+
+Przyk³ad:
+
+var a,b,c:integer;
+ 
+VAR 
+S³owo kluczowe var s³u¿y do deklaracji zmiennych. S³owo to musi znaleŸæ sie przed pierwszym wyst¹pieniem s³owa kluczowego begin. S³owo kluczowe var mo¿e byæ u¿ywane wielkorotnie podczas deklarowania zmiennych.
+
+Przyk³ad:
+
+var i,j:integer;
+      l:double;
+var k:integer;
+ 
+
+PROGRAM 
+S³owo kluczowe program s³u¿y do nadania nazwy programu. Nazwa wystêpuj¹ca po tym s³owie kluczowym pojawi siê na belce tytu³owej okna wykonywanego programu.
+
+Przyk³ad
+
+program pierwszy_program;
+ 
+
+READ 
+Instrukcja read jest instrukcj¹ wejœcia. S³u¿y do wczytywania z klawiatury wartoœci zmiennych. Po wczytaniu wartoœci zmiennej kursor nie przechodzi do nastêpnej linii.
+
+Przyk³ad:
+
+read(a);
+ 
+
+READLN 
+Instrukcja readln jest instrukcj¹ wejœcia. S³u¿y do wczytywania z klawiatury wartoœci zmiennych. Po wczytaniu wartoœci zmiennej kursor przechodzi do nastêpnej linii.
+
+Przyk³ad:
+
+readln(a)
+ 
+
+WRITE 
+Instrukcja write jest instrukcj¹ wyjœcia. S³u¿y do wypisywania na ekranie komunikatów tekstowych i wartoœci liczbowych. Komunikat tekstowy musi byæ zapisany w apostrofach.Po wykonaniu instrukcji write kursor przechodzi do nastêpnêj linii
+
+Przyk³ad:
+
+write('to jest komunikat tekstowy');
+write(a); 
+ 
+
+WRITELN 
+Instrukcja writeln jest instrukcj¹ wyjœcia. S³u¿y do wypisywania na ekranie komunikatów tekstowych i wartoœci liczbowych. Komunikat tekstowy musi byæ zapisany w apostrofach.Po wykonaniu instrukcji writeln kursor przechodzi do nastêpnêj linii
+
+Przyk³ad:
+
+writeln('to jest komunikat tekstowy');
+writeln(a); 
+ 
+
+IF-THEN 
+W programie mo¿na u¿ywaæ instrukcji warunkowych o nastêpuj¹cej konstrukcji
+
+if warunek then
+
+gdzie warunek jest prost¹ instrukcj¹ porównania, w której mo¿liwe s¹ do u¿ycia nastêpuj¹ce operatory porównania:
+- równy "="
+- mniejszy "<"
+- wiêkszy ">"
+- mniejszy równy ">="
+- wiêkszy równy "<="
+- rów¿ny "<>"
+
+W warunku nie mo¿na u¿ywaæ nawiasów ani operatorów logicznych. Instrukcje warunkowe mog¹ byæ zagnie¿d¿ane.
+
+Przyk³ad:
+
+var j:integer;
+begin
+   readln(j);
+   if j<>9 then
+  	 writeln('j jest ró¿ne od 9');
+end.
+ 
+FOR 
+S³owo kluczowe s³u¿¹ce do tworzenia pêtli 
+-> zobacz pêtle
+ 
+TO 
+S³owo kluczowe s³u¿¹ce do tworzenia pêtli 
+-> zobacz pêtle
+ 
+DO 
+S³owo kluczowe s³u¿¹ce do tworzenia pêtli 
+-> zobacz pêtle
+ 
+IF 
+S³owo kluczowe s³u¿¹ce do tworzenia instrukcji warunkowych 
+-> zobacz instrukcje warunkowe
+ 
+THEN 
+S³owo kluczowe s³u¿¹ce do tworzenia instrukcji warunkowych
+-> zobacz instrukcje warunkowe
+ 
+INSTRUKCJE PORÓWNANIA 
+Prosta instrukcja porównania wystêpuj¹ca wewn¹trz instrukcji warunkowej, w której mo¿liwe s¹ do u¿ycia nastêpuj¹ce operatory porównania (-> zobacz operatory porównania)
+- równy "="
+- mniejszy "<"
+- wiêkszy ">"
+- mniejszy równy ">="
+- wiêkszy równy "<="
+- równy "<>"
+
+-> zobacz instrukcje warunkowe
+ 
+ZMIENNA 
+S³owo, które nale¿y zadeklarowaæ po s³owie kluczowym var (-> zobacz var). Nazwa zmiennej mozê sk³adaæ siez liter, cyfr i znku podkreœlenia "_", ale cyfra nie mozê byæ pierwszym znakiem w nazwie zmiennej. Nazw¹ zmiennej nie mog¹ byæ równie¿ s³owa zastrze¿one (-> zobacz s³owa zastrze¿one). Zmienna mo¿e byæ typu ca³kowitego (-> zobacz integer) i zmiennoprzecinkowego - rzeczywistego (-> zobacz double)
+
+Przyk³ad:
+
+var ilosc,jest:integer;
+      liczba:double;
+ 
+INTEGER
+Typ zmiennej ca³kowitoliczbowy. Zmienne zadeklarowane jako integer mog¹ przyjmowaæ wartoœci z przedzia³u:–2147483648..2147483647
+ 
+DOUBLE
+Typ zmiennej rzeczywistoliczbowej. Zmienne zadeklarowane jako double mog¹ przyjmowa¿ wartoœci rzêdu 5.0 x 10^–324 .. 1.7 x 10^308
+ 
+BEGIN
+S³owo kluczowe oznaczaj¹ce pocz¹tek programu, lub pocz¹tek bloku. Jeœli jest to pierwszy wyst¹pienie s³owa begin - to jest to pocz¹tek programu. Iloœæ wyst¹pieñ s³ów begin i end musi byæ taka sama.
+
+-> zobacz end
+
+Przyk³ad:
+
+var a,b,c:integer;
+begin                                {---pocz¹tek programu---}
+    for a:=1 to 3 do
+        for b:=1 to 2 do
+        begin                        {---pocz¹tek bloku---}
+            writeln('kurde');
+            for c:=1 to 2 do
+                writeln(a);
+        end;
+end.
+ 
+END 
+S³owo kluczowe oznaczaj¹ce koniec programu lub koniec bloku. Jeœli po s³owie kluczowym end wystêpuje kropka - to jest to koniec programu.Iloœæ wyst¹pieñ s³ów begin i end musi byæ taka sama. 
+
+-> zobacz begin
+
+Przyk³ad:
+
+var a,b,c:integer;
+begin
+    for a:=1 to 3 do
+        for b:=1 to 2 do
+        begin
+            writeln('kurde');
+            for c:=1 to 2 do
+                writeln(a);
+        end;                         {---koniec bloku---}
+end.                                 {---koniec programu---}
+ 
+INSTRUKCJE
+W programie mozliwe do wykonania s¹ nastêpuj¹ce instrukcje:
+- instrukcje matematyczne (-> zobacz instrukcje matematyczne)
+- instrukcje przypisania (-> zobacz instrukcje przypisania)
+- instrukcje puste (-> zobacz instrukcje puste)
+- instrukcje wejœcia/wyjœcia (-> zobacz read, readln, write, writeln)
+- instrukcje warunkowe (-> zobacz instrukcje warunkowe)
+- pêtle (-> zobacz pêtle)
+ 
+INSTRUKCJE PUSTE 
+Instrukcje sk³adaj¹ce sie z samego znaku œrednika. S¹ pomijane podczas uruchamiania
+
+Przyk³ad:
+
+begin
+     writeln('pierwszy program');
+     ;                                         {---instrukcja pusta---}
+end.
+ 
+INSTRUKCJA PRZYPISANIA 
+Instrukcje nadaj¹ce nowe wartoœci zmiennym. Postaæ instrukcji przypisania wygl¹da nastêpuj¹co:
+
+zmienna := wartoœæ lub zmienna lub wyra¿enie;
+
+Przyk³ad:
+
+var a,b:integer;
+begin
+	a:=5;                {---instrukcja przypisania---}
+	b:=a;                {---instrukcja przypisania---}
+	a:=a+sin(30);    {---instrukcja przypisania---}
+end.
+ 
+INSTRUKCJE MATEMATYCZNE
+Instrukcje s³u¿¹ce do wykonywania operacji arytmetycznych. S³u¿¹ do zmiany wartosci zmiennych - s¹ u¿ywane w po³¹czeniu z instrukcj¹ przypisania (-> zobacz instrukcje przypisania). 
+
+Dostêpne s¹ nastêpuj¹ce operatory arytmetyczne:
+- dodawanie "+"
+- odejmowanie "-"
+- mno¿enie "*"
+- dzielenie "/"
+- potêgowanie "^"
+
+Dostêpne s¹ nastêpuj¹ce funkcje matematyczne
+- arcsin(V); - arcus sinus [ dla radiana ]
+- arccos(V); - arcus cosinus [ dla radiana ]
+- arctan(V); - arcus tangens [ dla radiana ]
+- sin(V); - sinus [ dla radiana ]
+- cos(V); - cosinus [ dla radiana ]
+- tan(V); - tangens [ dla radiana ]
+- cotan(V); - cotangens [ dla radiana ]
+- ln(V); - logarytm naturalny
+- exp(V); - exponent
+- sqrt(V); - pierwiaste
+
+W instrukcjach matematycznych mo¿na u¿ywaæ nawiasów i znaku minus "-" do oznaczenia liczb ujemnych.
+Zachowana jest kolejnoœæ wykonywania operacji matematycznych
+
+Przyk³ad:
+
+a:= a+3;
+j:=j+1,3*43-76/83 * 2 ^3;
+ 
+OPERATORY MATEMATYCZNE 
+Dostêpne s¹ nastêpuj¹ce operatory arytmetyczne:
+- dodawanie "+"
+- odejmowanie "-"
+- mno¿enie "*"
+- dzielenie "/"
+- potêgowanie "^"
+Operatory arytmetyczne u¿ywane s¹ w instrukcjach matematycznych 
+-> zobacz instrukcje matematyczne
+ 
+FUNKCJE MATEMATYCZNE 
+Dostêpne s¹ nastêpuj¹ce wbudowane funkcje matematyczne:
+- arcsin(V); - arcus sinus [ dla radiana ]
+- arccos(V); - arcus cosinus [ dla radiana ]
+- arctan(V); - arcus tangens [ dla radiana ]
+- sin(V); - sinus [ dla radiana ]
+- cos(V); - cosinus [ dla radiana ]
+- tan(V); - tangens [ dla radiana ]
+- cotan(V); - cotangens [ dla radiana ]
+- ln(V); - logarytm naturalny
+- exp(V); - exponent
+- sqrt(V); - pierwiastek
+Funkcje matematyczne u¿ywane s¹ w instrukcjach matematycznych 
+-> zobacz instrukcje matematyczne
+ 
+OPERATORY PORÓWNANIA 
+Wewn¹trz instrukcji warunkowej mo¿liwe s¹ do u¿ycia nastêpuj¹ce operatory porównania:
+- równy "="
+- mniejszy "<"
+- wiêkszy ">"
+- mniejszy równy ">="
+- wiêkszy równy "<="
+- rów¿ny "<>"
+
+-> zobacz instrukcje warunkowe
+ 
+ARCUS SINUS 
+Funkcja matematyczna obliczaj¹ca arcus sinus [ dla radiana ]
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=arcsin(10);
+ 
+ARCUS COSINUS 
+Funkcja matematyczna obliczaj¹ca arcus cosinus [ dla radiana ]
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=arccos(10);
+ 
+ARCUS TANGES 
+Funkcja matematyczna obliczaj¹ca arcus tangens [ dla radiana ]
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=arctan(10);
+ 
+SINUS 
+Funkcja matematyczna obliczaj¹ca sinus [ dla radiana ]
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=sin(10);
+ 
+COSINUS 
+Funkcja matematyczna obliczaj¹ca cosinus [ dla radiana ]
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=cos(10);
+ 
+TANGES 
+Funkcja matematyczna obliczaj¹ca tangens [ dla radiana ]
+-> zobacz funkcje matematyczne
+
+a:=tan(10);
+ 
+COTANGES 
+Funkcja matematyczna obliczaj¹ca cotangens [ dla radiana ]
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=cotan(10)
+ 
+LOGARYTM NATURALNY 
+Funkcja matematyczna obliczaj¹ca logarytm naruralny z liczby
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=ln(10)
+ 
+EXPONENT 
+Funkcja matematyczna obliczaj¹ca exponent z liczby
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=exp(10)
+ 
+PIERWIASTEK KWADRATOWY 
+Funkcja matematyczna obliczaj¹ca pierwiastek drugiego stopnia z liczby
+-> zobacz funkcje matematyczne
+
+Przyk³ad:
+
+a:=sqrt(100)
+ 
+BLOK
+Instrukcje zawarte pomiêdzy s³owami begin i end.
+
+-> zobacz begin
+-> zobacz end
+
+Przyk³ad:
+
+program test;
+var i,k:integer;
+begin
+    i:=6;
+    k:=6;
+    if i=k then
+    begin                       {---pocz¹tek bloku---]
+        writeln('równe');
+        if i<>k then
+           writeln('ró¿ne');
+    end;                         {---koniec bloku---}
+end.
+ 
+ 
+

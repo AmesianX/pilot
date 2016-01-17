@@ -1,0 +1,241 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Memory Trace Lib Doc</title>
+</head>
+
+<body>
+
+<h1 align="center"><span style="font-weight: 400">Memory Trace Lib Doc</span></h1>
+<h2 align="left">Package:</h2>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This package includes memtrace.h, 
+heaptrace.h, memtrace_com.h and memtrace.lib. To use this package in win32 
+system to trace HeapAlloc, including &lt;windows.h&gt; before &quot;memtrace.h&quot;. To use 
+this package without tracing HeapAlloc, you can use it to trace whatever apps 
+conforms to ANSI C. This package will make your life easier to locate the memory 
+leaks fast. It's also a useful tool to analyze your app's memory usage and find 
+out which code consumes much memory.</p>
+<h2 align="left">Functionality:</h2>
+<ul>
+  <li>
+  <p align="left">Trace HeapAlloc, malloc, new allocated memory.</li>
+  <li>
+  <p align="left">Trace Total allocated memory, total freed memory, peek memory 
+  usage.</li>
+  <li>
+  <p align="left">Trace overal memory usage distributions into file and line. 
+  Trace peek memory distributions.</li>
+  <li>
+  <p align="left">Trace stack size.</li>
+  <li>
+  <p align="left">Output memory trace log file.</li>
+</ul>
+<h2 align="left">Usage:</h2>
+<ul>
+  <li>
+  <p align="left">Include header file</p>
+  <p align="left">Add Line: #include &quot;memtrace.h&quot; into your header file.<br>
+  Before this line, define macros to specify which memory you want to trace. </p>
+  <p align="left">Sample code:<br>
+  #define TRACE_MALLOC 0<br>
+  #define TRACE_NEW 0<br>
+  #define TRACE_HEAP 1<br>
+  #define TRACE_STACK 1<br>
+  #include &quot;memtrace.h&quot;<br>
+&nbsp;</p>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="80%" id="AutoNumber1">
+    <tr>
+      <td width="24%" bgcolor="#FF0000">MACRO</td>
+      <td width="19%" bgcolor="#FF0000">VALUE</td>
+      <td width="57%" bgcolor="#FF0000">USAGE</td>
+    </tr>
+    <tr>
+      <td width="24%">TRACE_MALLOC</td>
+      <td width="19%">1(on) / 0(off)</td>
+      <td width="57%">once defined it as 1, it will trace all the malloc that 
+      appears in source files, which included the memtrace.h. It will give you 
+      logs which file/line calls malloc and how much is allocated and freed in 
+      this location.</td>
+    </tr>
+    <tr>
+      <td width="24%">TRACE_NEW</td>
+      <td width="19%">1(on) / 0(off)</td>
+      <td width="57%">once defined it as 1, it will trace the total new 
+      allocated memory. To enable tracing into details as which file/line 
+      totally allocated/freed how much memory, It is REQUIRED to put 
+      MARK_THIS_POSITION right before each new calls.</td>
+    </tr>
+    <tr>
+      <td width="24%">TRACE_HEAP</td>
+      <td width="19%">1(on) / 0(off)</td>
+      <td width="57%">as trace_malloc, it will trace all the HeapAlloc into 
+      details. </td>
+    </tr>
+    <tr>
+      <td width="24%">TRACE_STACK</td>
+      <td width="19%">1(on) / 0(off)</td>
+      <td width="57%">This will enable tracing the stack depth. To trace stack 
+      usage of specific function and its called. Put 
+      STACK_MEASURE_START(stack_no) to the first statement of the function. Put 
+      STACK_MEASURE_STOP(stack_depth, stack_no) to the last statement of the 
+      function. stack_depth contains the call stack depth of this function in 
+      bytes.<p>To trace stack usage for the entire application, because each 
+      thread has its own call stack, you need to trace all of them. 
+      STACK_MEASURE_START(stack_no) gives you capability to trace several stacks 
+      at the same time. Specify the stack_no from 0 to the total of your stacks, 
+      put STACK_MEASURE_START() to the entry point of each thread and 
+      STACK_MEASURE_STOP() to the exit point, and sum all of the stack_depth, 
+      you will get the stack depth of the entire application. </p>
+      <p>STACK_MEASURE_START() and STACK_MEASURE_STOP MUST put into same 
+      function.</td>
+    </tr>
+  </table>
+  <p align="left">If anyone of TRACE_MALLOC, TRACE_NEW and TRACE_HEAP is on, you 
+  will need put HEAP_MEASURE_START() to the start point that you want to trace 
+  the memory usage, Put WRITE_MEM_LOG to output memory usage to log files ( &quot;\stat.log&quot; 
+  ). If HEAP_MEASURE_START() is called twice, the last call will eliminate the 
+  first tracing results.<br>
+&nbsp;</li>
+  <li>
+  <p align="left">Link lib</p>
+  <p align="left">Add memtrace.lib to your linked lib.</li>
+</ul>
+<h2 align="left">Sample code:</h2>
+<ol>
+  <li>
+  <p align="left">Tracing HeapAlloc/malloc/new for single thread console app:<br>
+  #define TRACE_MALLOC&nbsp;&nbsp;&nbsp;&nbsp; 1<br>
+  #define TRACE_NEW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  1<br>
+  #define TRACE_HEAP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  1<br>
+  #include &quot;memtrace.h&quot;<br>
+  <br>
+  int main()<br>
+  {<br>
+&nbsp;&nbsp;&nbsp; HEAP_MEASURE_START() <br>
+&nbsp;&nbsp;&nbsp; your code ...<br>
+&nbsp;&nbsp;&nbsp; WRITE_MEM_LOG<br>
+  }<br>
+&nbsp;</li>
+  <li>
+  <p align="left">Tracing Stack for single thread console app:<br>
+  #define TRACE_STACK&nbsp;&nbsp;&nbsp;&nbsp; 1<br>
+  #include &quot;memtrace.h&quot;<br>
+  <br>
+  int main()<br>
+  {<br>
+&nbsp;&nbsp;&nbsp; STACK_MEASURE_START(0) <br>
+&nbsp;&nbsp;&nbsp; your code ...<br>
+&nbsp;&nbsp;&nbsp; STACK_MEASURE_STOP(stack_depth, 0)<br>
+&nbsp;&nbsp;&nbsp; printf(&quot;Total Stack Depth: %d&quot;, stack_depth);<br>
+  }<br>
+  <br>
+&nbsp;</li>
+</ol>
+<h2 align="left">Sample Logs:</h2>
+<p align="left">*********************<br>
+Peek Ram Used: 216343<br>
+Peek Ram Distributions:<br>
+272 bytes(0.001257 percent) in D:\build\multimedia\src\v8dme\Network\client\dstruct\vcelpool.cpp 
+line 724.<br>
+1284 bytes(0.005935 percent) in ..\common\baseclient.h line 64.<br>
+800 bytes(0.003698 percent) in ..\common\basesession.h line 72.<br>
+592 bytes(0.002736 percent) in ..\wince\asyncresult.h line 179.<br>
+20 bytes(0.000092 percent) in ..\include\wmsstring.h line 1055.<br>
+520 bytes(0.002404 percent) in D:\build\multimedia\src\v8dme\Network\client\wince\workqueue.h 
+line 294.<br>
+168 bytes(0.000777 percent) in D:\build\multimedia\src\v8dme\Network\client\wince\asyncresult.h 
+line 179.<br>
+1380 bytes(0.006379 percent) in ..\common\basechannel.h line 65.<br>
+171691 bytes(0.793606 percent) in D:\build\multimedia\src\v8dme\Network\client\common\netbuffer.h 
+line 59.<br>
+32 bytes(0.000148 percent) in D:\build\multimedia\src\v8dme\Network\client\wince\socketimp.cpp 
+line 779.<br>
+1334 bytes(0.006166 percent) in ..\common\netbuffer.h line 59.<br>
+6608 bytes(0.030544 percent) in D:\build\multimedia\src\v8dme\Network\client\common\netbuffer.h 
+line 616.<br>
+80 bytes(0.000370 percent) in D:\build\multimedia\src\v8dme\Network\client\wince\socketimp.cpp 
+line 665.<br>
+15611 bytes(0.072159 percent) in D:\build\multimedia\src\v8dme\Network\client\wince\socketimp.cpp 
+line 678.<br>
+60 bytes(0.000277 percent) in D:\build\multimedia\src\v8dme\Network\client\common\netbuffer.cpp 
+line 64.<br>
+1024 bytes(0.004733 percent) in D:\build\multimedia\src\v8dme\Network\client\common\incrementalalloc.h 
+line 120.<br>
+328 bytes(0.001516 percent) in ..\common\netbuffer.h line 616.<br>
+6251 bytes(0.028894 percent) in ..\common\incrementalalloc.h line 120.<br>
+3160 bytes(0.014606 percent) in ..\common\ipresentationdescription.h line 133.<br>
+1824 bytes(0.008431 percent) in D:\build\multimedia\src\v8dme\Network\client\netstream\netstream.cpp 
+line 1506.<br>
+<br>
+Memory Statistics:<br>
+Allocated Total Memory: 2936922 bytes.<br>
+Allocated Free Memory: 2900437 bytes.<br>
+HeapAlloc Memory: 2936922 bytes.<br>
+Malloc Memory: 0 bytes.<br>
+New Memory: 0 bytes.<br>
+Maximum Ram Used: 221266 bytes.<br>
+Detailed Heap Allocated.<br>
+<br>
+292 bytes in d:\build\multimedia\src\v8dme\network\client\dstruct\vcelpool.cpp 
+722 line. Remain 292 bytes.<br>
+2444 bytes in d:\build\multimedia\src\v8dme\network\client\common\baseclient.h 
+64 line. Remain 2444 bytes.<br>
+1320 bytes in d:\build\multimedia\src\v8dme\network\client\common\basesession.h 
+72 line. Remain 1320 bytes.<br>
+64572 bytes in d:\build\multimedia\src\v8dme\network\client\wince\asyncresult.h 
+179 line. Remain 816 bytes.<br>
+13437 bytes in d:\build\multimedia\src\v8dme\network\client\include\wmsstring.h 
+1055 line. Remain 20 bytes.<br>
+520 bytes in d:\build\multimedia\src\v8dme\network\client\wince\workqueue.h 294 
+line. Remain 520 bytes.<br>
+1384 bytes in d:\build\multimedia\src\v8dme\network\client\common\basechannel.h 
+65 line. Remain 1384 bytes.<br>
+11464 bytes in d:\build\multimedia\src\v8dme\network\client\common\inetrequest.h 
+201 line. Remain 1344 bytes.<br>
+1069484 bytes in d:\build\multimedia\src\v8dme\network\client\common\netbuffer.h 
+59 line. Remain 10720 bytes.<br>
+9952 bytes in D:\build\multimedia\src\v8dme\NETWORK\CLIENT\WINCE\socketimp.cpp 
+779 line. Remain 96 bytes.<br>
+1365784 bytes in d:\build\multimedia\src\v8dme\network\client\common\netbuffer.h 
+616 line. Remain 3980 bytes.<br>
+2024 bytes in D:\build\multimedia\src\v8dme\NETWORK\CLIENT\WINCE\socketimp.cpp 
+1879 line. Remain 78 bytes.<br>
+6832 bytes in d:\build\multimedia\src\v8dme\network\client\wince\workqueue.cpp 
+206 line. Remain 0 bytes.<br>
+1904 bytes in D:\build\multimedia\src\v8dme\NETWORK\CLIENT\WINCE\socketimp.cpp 
+665 line. Remain 0 bytes.<br>
+351469 bytes in D:\build\multimedia\src\v8dme\NETWORK\CLIENT\WINCE\socketimp.cpp 
+678 line. Remain 0 bytes.<br>
+60 bytes in d:\build\multimedia\src\v8dme\network\client\common\netbuffer.cpp 64 
+line. Remain 60 bytes.<br>
+28332 bytes in d:\build\multimedia\src\v8dme\network\client\common\incrementalalloc.h 
+120 line. Remain 8299 bytes.<br>
+512 bytes in d:\build\multimedia\src\v8dme\network\client\common\inetrequest.h 
+83 line. Remain 0 bytes.<br>
+3160 bytes in d:\build\multimedia\src\v8dme\network\client\common\ipresentationdescription.h 
+133 line. Remain 3160 bytes.<br>
+1952 bytes in D:\build\multimedia\src\v8dme\Network\client\netstream\netstream.cpp 
+1508 line. Remain 1952 bytes.<br>
+24 bytes in d:\build\multimedia\src\v8dme\network\client\wince\asyncresult.h 356 
+line. Remain 0 bytes.<br>
+<br>
+Detailed New Allocated.<br>
+<br>
+<br>
+Detailed Malloc Allocated.<br>
+<br>
+&nbsp;</p>
+<hr>
+
+<p align="right"><i>last edit on
+<!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%Y" startspan -->08/15/2002<!--webbot bot="Timestamp" endspan i-checksum="12584" --></i></p>
+
+</body>
+
+</html>

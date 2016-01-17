@@ -1,0 +1,9 @@
+Mini Pascal -> <assignment> | <if> | <for> | <do-while> | <while-do> | <function call>
+<assignment> -> <identifier> := <expression>
+
+<expression> --> <term> | <sign><term> | <term> <addoperator> <term>
+<term> --> <factor> | <factor> <multoperator> <factor>
+<factor> --> <number> | <id> | <function> |(<expression>)
+<multoperator> --> * | / | %
+<addoperator> --> + | -
+

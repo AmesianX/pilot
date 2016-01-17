@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="20n24b9rq_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Tetris:BlockShape.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="229,370,123,77" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:BlockShape.TBlockShape">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="15,10,164,414" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.GetIsEmpty()" />
+      <reference referencedUin="delphi:e_property:src:Tetris:BlockShape.TBlockShape.IsEmpty[]" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.Draw()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.Process_KeyDown(System.UInt16)" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_MoveDown()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_Drop()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_Move(System.UInt16)" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.CreateNext()" />
+      <reference referencedUin="design:link:::1uilqdrnj_l">
+        <property name="sourceAnchor" value="179,216" />
+        <property name="targetAnchor" value="259,216" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CreateBlockShape3()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CreateBlockShape2()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CreateBlockShape1()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:BlockShape.TBlockShape.FBlockList" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.Create()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CreateBlockShape7()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CreateBlockShape6()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CreateBlockShape5()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CreateBlockShape4()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_MoveRight()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_MoveLeft()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:BlockShape.TBlockShape.FIsClone" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.Clone()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockShape.TBlockShape.do_CheckCollision(System.UInt16)" />
+      <reference referencedUin="design:link:::zygvazfvm_l">
+        <property name="sourceAnchor" value="97,424" />
+        <property name="targetAnchor" value="97,494" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:Block.TBlock">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="259,107,110,219" />
+      <reference referencedUin="delphi:e_property:src:Tetris:Block.TBlock.Width[]" />
+      <reference referencedUin="delphi:e_property:src:Tetris:Block.TBlock.Height[]" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.GetHeight()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.GetWidth()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Block.TBlock.X" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Block.TBlock.Y" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.Draw()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.DropDown()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.MoveRight()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.MoveLeft()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:RotateBlocks.TRotateBlocks">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,494,174,172" />
+      <reference referencedUin="delphi:e_method:src:Tetris:RotateBlocks.TRotateBlocks.do_GetEndY()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:RotateBlocks.TRotateBlocks.do_GetEndX()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:RotateBlocks.TRotateBlocks.do_GetStartX()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:RotateBlocks.TRotateBlocks.FBlockList" />
+      <reference referencedUin="delphi:e_method:src:Tetris:RotateBlocks.TRotateBlocks.Rotate(Classes.TList)" />
+      <reference referencedUin="delphi:e_method:src:Tetris:RotateBlocks.TRotateBlocks.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:RotateBlocks.TRotateBlocks.Create()" />
+    </reference>
+  </view>
+  <link uin="1uilqdrnj_l">
+    <property name="$metaclass" value="Dependency Link" />
+    <property name="$name" value="Dependency Link1" />
+    <participant referencedUin="delphi:e_class:src:Tetris:BlockShape.TBlockShape" role="Client" />
+    <participant referencedUin="delphi:e_class:src:Tetris:Block.TBlock" role="Supplier" />
+  </link>
+  <link uin="zygvazfvm_l">
+    <property name="$metaclass" value="Dependency Link" />
+    <property name="$name" value="Dependency Link2" />
+    <participant referencedUin="delphi:e_class:src:Tetris:BlockShape.TBlockShape" role="Client" />
+    <participant referencedUin="delphi:e_class:src:Tetris:RotateBlocks.TRotateBlocks" role="Supplier" />
+  </link>
+</nodeSet>

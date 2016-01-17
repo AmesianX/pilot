@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="sjgqthybq_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:WhiteBoard:DrawShape.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,122,77" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:WhiteBoard:DrawShape.TADrawShape">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="220,120,94,63" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:WhiteBoard:DrawShape.TDrawCircle">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="160,280,81,63" />
+      <reference referencedUin="delphi:l_gnt:src:WhiteBoard:DrawShape.TDrawCircle:DrawShape.TADrawShape">
+        <property name="sourceAnchor" value="230,280" />
+        <property name="targetAnchor" value="230,183" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:WhiteBoard:DrawShape.TDrawBox">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="360,280,70,63" />
+      <reference referencedUin="delphi:l_gnt:src:WhiteBoard:DrawShape.TDrawBox:DrawShape.TADrawShape">
+        <property name="sourceAnchor" value="369,280" />
+        <property name="targetAnchor" value="292,183" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>

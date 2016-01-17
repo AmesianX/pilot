@@ -1,0 +1,54 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{d4241906-ef68-44c3-9904-9fd3a5ea2d12}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="Create FormView\CreateFormView.dproj" />
+    <Projects Include="Create FrameView\CreateFrameView.dproj" />
+    <Projects Include="Create MVC Step 1\CreateMVC01.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CreateMVC01">
+    <MSBuild Projects="Create MVC Step 1\CreateMVC01.dproj" Targets="" />
+  </Target>
+  <Target Name="CreateMVC01:Clean">
+    <MSBuild Projects="Create MVC Step 1\CreateMVC01.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="CreateMVC01:Make">
+    <MSBuild Projects="Create MVC Step 1\CreateMVC01.dproj" Targets="Make" />
+  </Target>
+  <Target Name="CreateFrameView">
+    <MSBuild Projects="Create FrameView\CreateFrameView.dproj" Targets="" />
+  </Target>
+  <Target Name="CreateFrameView:Clean">
+    <MSBuild Projects="Create FrameView\CreateFrameView.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="CreateFrameView:Make">
+    <MSBuild Projects="Create FrameView\CreateFrameView.dproj" Targets="Make" />
+  </Target>
+  <Target Name="CreateFormView">
+    <MSBuild Projects="Create FormView\CreateFormView.dproj" Targets="" />
+  </Target>
+  <Target Name="CreateFormView:Clean">
+    <MSBuild Projects="Create FormView\CreateFormView.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="CreateFormView:Make">
+    <MSBuild Projects="Create FormView\CreateFormView.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CreateMVC01;CreateFrameView;CreateFormView" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="CreateMVC01:Clean;CreateFrameView:Clean;CreateFormView:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="CreateMVC01:Make;CreateFrameView:Make;CreateFormView:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

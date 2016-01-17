@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="kf22nsimunnd0t3ng_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Sample:ServerUnit.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TVirtualSocketServer">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="400,340,233,189" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TVirtualSocketServer.FOnConnected">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:e_property:src:Sample:Base.TVirtualSocketServer.OnReceived" />
+      <reference referencedUin="delphi:e_property:src:Sample:Base.TVirtualSocketServer.OnConnected" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TVirtualSocketServer.Channel" />
+      <reference referencedUin="delphi:e_property:src:Sample:Base.TVirtualSocketServer.Provider" />
+      <reference referencedUin="delphi:e_property:src:Sample:Base.TVirtualSocketServer.OnDisconnected" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TVirtualSocketServer.FOnReceived">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TVirtualSocketServer.FOnDisconnected">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TVirtualSocketServer.Provider">
+        <property name="sourceAnchor" value="633,411" />
+        <property name="targetAnchor" value="700,411" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="design:link:::08yqyie9tpf_l">
+        <property name="sourceAnchor" value="487,340" />
+        <property name="targetAnchor" value="487,237" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServer.Create(Classes.TComponent)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServer.Destroy()" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TVirtualSocketServer.FProvider" />
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TVirtualSocketServer.FProvider">
+        <property name="sourceAnchor" value="633,403" />
+        <property name="targetAnchor" value="700,403" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TVirtualSocketServerProvider">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="700,160,236,382" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.Start()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.Stop()" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TVirtualSocketServerProvider.Port" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.on_Connected(System.Byte,Base.TConnection)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.on_Received(System.Byte,Base.TConnection,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.on_Disconnected(System.Byte,Base.TConnection)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendToOther(Base.TConnection,ValueList.TValueList)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendToAll(System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.LockList()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendToUserID(System.string,ValueList.TValueList)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendToUserID(System.string,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.FindConnectionByUserID(Classes.TList,System.string)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendToOther(Base.TConnection,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendToAll(ValueList.TValueList)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendTo(Base.TConnection,ValueList.TValueList)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.SendTo(Base.TConnection,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.UnlockList()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.CreateSocket(Classes.TComponentClass,ref@)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.do_RemoveSockets()" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TVirtualSocketServerProvider.FList">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.Create(Classes.TComponent)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TVirtualSocketServerProvider.Destroy()" />
+      <reference referencedUin="design:link:::4aiyazf4jwk0pmi1k_l">
+        <property name="sourceAnchor" value="700,198" />
+        <property name="targetAnchor" value="575,198" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TConnection">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="400,20,175,217" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TConnection.Disconnect()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TConnection.ClearIdleCount()" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TConnection.UserName" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TConnection.UserID" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TConnection.ChannelInfo" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TConnection.Password" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TConnection.PeerThread" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TConnection.Logined" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TConnection.SendNow()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TConnection.CheckIdle()" />
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TConnection.ChannelInfo">
+        <property name="sourceAnchor" value="400,51" />
+        <property name="targetAnchor" value="320,51" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TChannelInfo">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="200,20,120,110" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TChannelInfo.SendNow()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TChannelInfo.Add(System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TChannelInfo.Clear()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:ServerUnit.TVirtualSocketServerIndy9">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="700,600,236,263" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:l_gnt:src:Sample:ServerUnit.TVirtualSocketServerIndy9:Base.TVirtualSocketServerProvider">
+        <property name="sourceAnchor" value="818,600" />
+        <property name="targetAnchor" value="818,542" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.on_Disconnected(System.Byte,Base.TConnection)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.Start()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.Stop()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.on_Received(System.Byte,Base.TConnection,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.on_Connected(System.Byte,Base.TConnection)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.SendToOther(Base.TConnection,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.SendToUserID(System.string,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.SendTo(Base.TConnection,System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.LockList()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.FindConnectionByUserID(Classes.TList,System.string)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.SendToAll(System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TVirtualSocketServerIndy9.UnlockList()" />
+    </reference>
+    <reference referencedUin="design:node:::0ch027rb5xr_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="80,340,232,28" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="design:link:::yx2hqyf0ywh_l:0ch027rb5xr_n">
+        <property name="sourceAnchor" value="312,354" />
+        <property name="targetAnchor" value="400,354" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="design:node:::z03pa3yo41i_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="80,400,233,28" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="design:link:::f56n6t39u2g_l:z03pa3yo41i_n">
+        <property name="sourceAnchor" value="313,414" />
+        <property name="targetAnchor" value="400,414" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:ServerUnit.TTextChannelInfo">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,20,116,128" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:l_gnt:src:Sample:ServerUnit.TTextChannelInfo:Base.TChannelInfo">
+        <property name="sourceAnchor" value="136,51" />
+        <property name="targetAnchor" value="200,51" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TTextChannelInfo.SendNow()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TTextChannelInfo.Add(System.Pointer,System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TTextChannelInfo.Clear()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:ServerUnit.TCamChannelInfo">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,180,116,128" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:l_gnt:src:Sample:ServerUnit.TCamChannelInfo:Base.TChannelInfo">
+        <property name="sourceAnchor" value="136,190" />
+        <property name="targetAnchor" value="200,129" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TCamChannelInfo.SendNow()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TCamChannelInfo.Clear()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TCamChannelInfo.Add(System.Pointer,System.Integer)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:ServerUnit.TDeskCamChannelInfo">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="200,180,144,128" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:l_gnt:src:Sample:ServerUnit.TDeskCamChannelInfo:Base.TChannelInfo">
+        <property name="sourceAnchor" value="260,180" />
+        <property name="targetAnchor" value="260,130" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TDeskCamChannelInfo.SendNow()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TDeskCamChannelInfo.Clear()" />
+      <reference referencedUin="delphi:e_method:src:Sample:ServerUnit.TDeskCamChannelInfo.Add(System.Pointer,System.Integer)" />
+    </reference>
+    <reference referencedUin="design:node:::tqw6ess9q7k_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="80,460,263,28" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="design:link:::m79wrkpck3n_l:tqw6ess9q7k_n">
+        <property name="sourceAnchor" value="343,474" />
+        <property name="targetAnchor" value="400,474" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>

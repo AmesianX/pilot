@@ -1,0 +1,32 @@
+unit //UnitName//;
+
+interface
+
+uses
+//Uses//  Classes, SysUtils;
+
+type//Type//
+  //ClassName// = class (TComponent)
+  private//EventHandlerInterface//
+  private//PropertyPrivate//
+  public
+    constructor Create(AOwner:TComponent); override;
+    destructor Destroy; override;
+//Public////Published//
+  end;
+
+implementation
+
+constructor //ClassName//.Create(AOwner: TComponent);
+begin
+  inherited;
+//Constructor////SetEventHandler//
+end;
+
+destructor //ClassName//.Destroy;
+begin
+//Destructor//
+  inherited;
+end;
+//EventHandlerImplementation////Implementation//
+end.

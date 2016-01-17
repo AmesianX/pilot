@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <node uin="v7fisycukhv0kuq_n">
+    <property name="$metaclass" value="Class20" />
+    <property name="$name" value="TJawBorad" />
+    <link uin="74gia31vn_l">
+      <property name="$metaclass" value="KernelAssociation20" />
+      <property name="$name" value="Association1" />
+      <property name="aggregation" value="True" />
+      <property name="clientCardinality" value="1" />
+      <property name="supplierCardinality" value="0..*" />
+      <participant referencedUin="design:node:::v7fisycukhv0kuq_n" role="Client" />
+      <participant referencedUin="design:node:::3afca1v5lpgv2fs_n" role="Supplier" />
+    </link>
+    <node uin="4tfwulohqh7gxrm_n">
+      <property name="$metaclass" value="Operation20" />
+      <property name="$name" value="Clear" />
+    </node>
+    <node uin="upfv793jsv7myie_n">
+      <property name="$metaclass" value="Operation20" />
+      <property name="$name" value="Start" />
+    </node>
+    <node uin="f3h06vvrrbka87r_n">
+      <property name="$metaclass" value="Property20" />
+      <property name="$name" value="Crystals" />
+      <property name="mod__type" value="TCrystals" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+    <node uin="pih862qal0fsrsq_n">
+      <property name="$metaclass" value="Operation20" />
+      <property name="$name" value="GoDown" />
+    </node>
+    <node uin="ymhlp96sr2gsygh_n">
+      <property name="$metaclass" value="Property20" />
+      <property name="$name" value="Point" />
+      <property name="mod__type" value="Integer" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+    <node uin="d0iurmvyg_n">
+      <property name="$metaclass" value="Operation20" />
+      <property name="$name" value="Draw" />
+    </node>
+    <node uin="63inqjcq5jpk5co_n">
+      <property name="$metaclass" value="Property20" />
+      <property name="$name" value="CanClick" />
+      <property name="mod__type" value="Boolean" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+  </node>
+  <node uin="3afca1v5lpgv2fs_n">
+    <property name="$metaclass" value="Class20" />
+    <property name="$name" value="TCrystal" />
+    <node uin="xmgdjb1obqlyzcr_n">
+      <property name="$metaclass" value="Property20" />
+      <property name="$name" value="Selected" />
+      <property name="mod__type" value="Boolean" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+    <node uin="mqg80jgeg_n">
+      <property name="$metaclass" value="Property20" />
+      <property name="$name" value="CrystalType" />
+      <property name="mod__type" value="TCrystalType" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+    <node uin="mthzuaofs_n">
+      <property name="$metaclass" value="Property20" />
+      <property name="$name" value="X" />
+      <property name="mod__type" value="Integer" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+    <node uin="1whpxbhyr_n">
+      <property name="$metaclass" value="Property20" />
+      <property name="$name" value="Y" />
+      <property name="mod__type" value="Integer" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+  </node>
+  <node uin="a1g5wo0698nds7l_n">
+    <property name="$metaclass" value="Class20" />
+    <property name="$name" value="TGameCanvas" />
+  </node>
+  <node uin="eahl0he05wdjsfn_n">
+    <property name="$metaclass" value="Class20" />
+    <property name="$name" value="TGameLogic" />
+    <node uin="lehq3t707hj55vj_n">
+      <property name="$metaclass" value="Operation20" />
+      <property name="$name" value="Clicked" />
+      <property name="mod_Visibility" value="$public" />
+    </node>
+  </node>
+</nodeSet>

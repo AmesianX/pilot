@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2014-05-16 14:11:22.152,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-05-16 14:13:50.002,D:\Projects\Pilot\Delphi\DrawText on Rect\_fmMain.dfm=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014-05-16 14:13:50.002,D:\Projects\Pilot\Delphi\DrawText on Rect\_fmMain.pas=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-05-16 14:13:52.089,D:\Projects\Pilot\Delphi\DrawText on Rect\Sample.dproj=C:\Users\Ryu\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

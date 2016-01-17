@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="55n1jfdsg_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Tetris:GameTimer.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,122,77" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:GameTimer.TGameTimer">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="400,220,86,63" />
+    </reference>
+  </view>
+</nodeSet>

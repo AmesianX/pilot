@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="8yf8029d7nmrm1s_v">
+    <property name="$metaclass" value="ClassDiagram20" />
+    <property name="$name" value="그림을 그리는 객체" />
+    <reference referencedUin="design:node:::a1g5wo0698nds7l_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,20,96,76" />
+    </reference>
+  </view>
+</nodeSet>

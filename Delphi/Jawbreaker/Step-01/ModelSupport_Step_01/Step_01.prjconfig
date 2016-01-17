@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="Gendoc.Images" Type="System.Boolean" Value="True" IsBrowsable="False" />
+  <Option Name="Gendoc.LaunchBrowser" Type="System.Boolean" Value="True" IsBrowsable="False" />
+  <Option Name="Gendoc.NavigationTree" Type="System.Boolean" Value="True" IsBrowsable="False" />
+  <Option Name="Gendoc.OutputFolder" Type="System.String" Value="C:\Documents and Settings\류종택\My Documents\Borland Studio Projects\Jawbreaker\Step-01\out\doc" IsBrowsable="False" />
+</TgConfig>

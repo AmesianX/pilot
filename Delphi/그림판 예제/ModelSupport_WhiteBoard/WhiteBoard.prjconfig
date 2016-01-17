@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.frmMain" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.DrawShape" Type="System.String" Value="" IsBrowsable="False" />
+</TgConfig>

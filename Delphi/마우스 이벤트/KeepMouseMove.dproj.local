@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2014-06-13 13:32:01.952,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-06-13 13:34:28.752,D:\Projects\Pilot\Delphi\마우스 이벤트\_fmMain.pas=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-06-13 13:34:28.752,D:\Projects\Pilot\Delphi\마우스 이벤트\_fmMain.dfm=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014-06-13 13:34:39.443,D:\Projects\Pilot\Delphi\마우스 이벤트\KeepMouseMove.dproj=C:\Users\Ryu\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

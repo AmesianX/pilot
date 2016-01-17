@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="hyh0wmg89c7tyhq_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Tetris:UI_Interface.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="12,260,125,94" />
+      <reference referencedUin="delphi:e_field:src:Tetris:UI_Interface.MyObject" />
+      <reference referencedUin="delphi:l_ast:src:Tetris:UI_Interface.MyObject">
+        <property name="sourceAnchor" value="74,260" />
+        <property name="targetAnchor" value="74,176" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:UI_Interface.TUI">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,34,129,142" />
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.GetObject()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.on_Start()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.on_KeyDown()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.GameEnd()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.on_KeyDown(System.UInt16)" />
+      <reference referencedUin="delphi:e_field:src:Tetris:UI_Interface.TUI._fmMain" />
+      <reference referencedUin="delphi:l_ast:src:Tetris:UI_Interface.TUI._fmMain">
+        <property name="sourceAnchor" value="139,105" />
+        <property name="targetAnchor" value="219,105" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:_frmMain.T_fmMain">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="219,10,160,190" />
+      <reference referencedUin="delphi:e_method:src:Tetris:_frmMain.T_fmMain.GetBoardCanvas()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:_frmMain.T_fmMain.GameEnd()" />
+      <reference referencedUin="delphi:e_property:src:Tetris:_frmMain.T_fmMain.BoardCanvas[]">
+        <reference referencedUin="delphi:e_method:src:Tetris:_frmMain.T_fmMain.BoardCanvas[].get_BoardCanvas" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:_frmMain.T_fmMain.Create(Classes.TComponent)" />
+      <reference referencedUin="delphi:e_method:src:Tetris:_frmMain.T_fmMain.on_KeyDown(System.UInt16)" />
+      <reference referencedUin="delphi:e_method:src:Tetris:_frmMain.T_fmMain.on_Start()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:_frmMain.T_fmMain.InitBoardCanvas()" />
+    </reference>
+  </view>
+  <link uin="0ri4a855i_l">
+    <property name="$metaclass" value="Dependency Link" />
+    <property name="$name" value="Dependency Link1" />
+    <participant referencedUin="delphi:e_class:src:Tetris:UI_Interface.TUI" role="Client" />
+    <participant referencedUin="delphi:e_class:src:Tetris:Logic_Interface.TLI" role="Supplier" />
+  </link>
+</nodeSet>

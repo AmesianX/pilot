@@ -1,0 +1,104 @@
+program kkk;
+var i,j:integer;
+ l:double;
+begin
+   i:=1;j   := 3; j:=j +i;
+   if j<>9 then
+   begin
+  	 writeln('j jest <> od 9');
+   end;
+   j:=j+1,3*43-76/83 * 2 ^3;
+   for i:=1 to 20 do
+   begin
+      l:=i^2;
+      i:=1/2;
+   end;
+
+end.
+
+program kkk;
+var a:integer;
+begin
+  write('to jest a->>>  '); write(a);
+  writeln('mam nadziejê ¿e dzia³a');
+end.
+
+program test;
+var i,k:integer;
+begin
+    i:=6;
+    k:=6;
+    if i<>k then
+    begin
+        writeln('rózne');
+        if i=k then
+           writeln('równe');
+    end;
+    if i=k then
+    begin
+        writeln('równe');
+        if i<>k then
+           writeln('ró¿ne');
+    end;
+end.
+
+var a,b,c:integer;
+begin
+    for a:=1 to 3 do
+        for b:=1 to 2 do
+        begin
+            writeln('wypisywanie');
+            for c:=1 to 2 do
+                writeln(a);
+        end;
+end.
+
+program kkk;
+var a:integer;
+begin
+	readln(a);
+	writeln(a);
+end.
+
+program kk;
+var a,b,i,suma:integer;
+begin
+    Writeln('*******Obliczanie sumy liczb*******');
+    writeln(' ');
+    suma:=0;
+    write('Podaj ilosc liczb: ');
+    readln(a);
+    for i:=1 to a do
+    begin
+        readln(b);
+        suma:=suma+b;
+    end;
+    writeln('Suma liczb wynosi: ');
+    writeln(suma);
+end.
+
+var a:integer;
+begin
+a:=-(-5);
+if -3>-5 then
+begin
+   writeln('s');
+   if -a<>5 then
+   begin
+      write('Wartoœæ a:  ');
+      writeln(a);
+   end;
+end;
+end.
+
+
+var a,b,c:integer;
+begin
+    for a:=-1 to 3 do
+        for b:=-1 to 2 do
+        begin
+            writeln('wypisywanie');
+            for c:=-1 to 2 do
+                writeln(a);
+        end;
+end.

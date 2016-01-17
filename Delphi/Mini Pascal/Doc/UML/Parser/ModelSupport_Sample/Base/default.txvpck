@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="ulc9pqcwmol_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Sample:Base.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TContext">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="280,20,63,63" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TExpressionList">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,260,222,97" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TExpressionList.FAbstractExpression" />
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TExpressionList.FAbstractExpression">
+        <property name="sourceAnchor" value="309,240" />
+        <property name="targetAnchor" value="380,240" />
+        <property name="bendpoints" value="" />
+        <reference referencedUin="label:supplierCardinality:delphi:l_ast:src:Sample:Base.TExpressionList.FAbstractExpression">
+          <property name="bounds" value="347,221,23,16" />
+        </reference>
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TExpressionList.GetExpression(System.string)" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TExpressionList.FItems" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TExpressionList.Destroy()">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TExpressionList.Create()">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TExpressionList.FItems">
+        <property name="sourceAnchor" value="242,277" />
+        <property name="targetAnchor" value="380,277" />
+        <property name="bendpoints" value="" />
+        <reference referencedUin="label:supplierCardinality:delphi:l_ast:src:Sample:Base.TExpressionList.FItems">
+          <property name="bounds" value="347,258,23,16" />
+        </reference>
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TParsingResult">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="280,120,99,63" />
+      <property name="location_set_by_user" value="True" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TParser">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,20,192,187" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TParser.FParsingResult" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TParser.FContext" />
+      <reference referencedUin="delphi:e_field:src:Sample:Base.TParser.FExpressionList" />
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TParser.FParsingResult">
+        <property name="sourceAnchor" value="212,125" />
+        <property name="targetAnchor" value="280,125" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TParser.FContext">
+        <property name="sourceAnchor" value="212,51" />
+        <property name="targetAnchor" value="280,51" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Sample:Base.TParser.FExpressionList">
+        <property name="sourceAnchor" value="116,207" />
+        <property name="targetAnchor" value="116,260" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TParser.Create()">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TParser.Destroy()">
+        <property name="$hidden" value="True" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TParser.Execute()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TParser.LoadFromText(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TParser.Clear()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TParser.LoadFromFile(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TParser.LoadFromStrean(Classes.TStream)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TAbstractExpression">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="380,200,186,95" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TAbstractExpression.get_Clone()" />
+      <reference referencedUin="delphi:e_method:src:Sample:Base.TAbstractExpression.is_MyToken(System.string)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TExpIf">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="380,360,62,63" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:l_gnt:src:Sample:Base.TExpIf:Base.TAbstractExpression">
+        <property name="sourceAnchor" value="411,360" />
+        <property name="targetAnchor" value="411,295" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TExpRepeat">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="480,360,82,63" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:l_gnt:src:Sample:Base.TExpRepeat:Base.TAbstractExpression">
+        <property name="sourceAnchor" value="521,360" />
+        <property name="targetAnchor" value="521,295" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Sample:Base.TExpNull">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="417,1,63,63" />
+      <reference referencedUin="delphi:l_gnt:src:Sample:Base.TExpNull:Base.TAbstractExpression">
+        <property name="sourceAnchor" value="448,64" />
+        <property name="targetAnchor" value="448,200" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>

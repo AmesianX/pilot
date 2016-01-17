@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="3lexsf09jk1aapr_v">
+    <property name="$metaclass" value="ClassDiagram20" />
+    <property name="$name" value="Main" />
+    <reference referencedUin="design:node:::v7fisycukhv0kuq_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,20,123,185" />
+      <reference referencedUin="design:link:::74gia31vn_l:v7fisycukhv0kuq_n">
+        <property name="sourceAnchor" value="143,82" />
+        <property name="targetAnchor" value="220,82" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="design:node:::4tfwulohqh7gxrm_n:v7fisycukhv0kuq_n">
+        <property name="bounds" value="35,14,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::upfv793jsv7myie_n:v7fisycukhv0kuq_n">
+        <property name="bounds" value="55,14,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::f3h06vvrrbka87r_n:v7fisycukhv0kuq_n">
+        <property name="bounds" value="35,7,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::pih862qal0fsrsq_n:v7fisycukhv0kuq_n">
+        <property name="bounds" value="55,17,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::ymhlp96sr2gsygh_n:v7fisycukhv0kuq_n">
+        <property name="bounds" value="75,7,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::d0iurmvyg_n:v7fisycukhv0kuq_n">
+        <property name="bounds" value="35,42,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::63inqjcq5jpk5co_n:v7fisycukhv0kuq_n">
+        <property name="bounds" value="55,27,0,0" />
+      </reference>
+    </reference>
+    <reference referencedUin="design:node:::3afca1v5lpgv2fs_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="220,20,166,138" />
+      <reference referencedUin="design:node:::xmgdjb1obqlyzcr_n:3afca1v5lpgv2fs_n">
+        <property name="bounds" value="35,7,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::mqg80jgeg_n:3afca1v5lpgv2fs_n">
+        <property name="bounds" value="75,7,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::mthzuaofs_n:3afca1v5lpgv2fs_n">
+        <property name="bounds" value="95,7,0,0" />
+      </reference>
+      <reference referencedUin="design:node:::1whpxbhyr_n:3afca1v5lpgv2fs_n">
+        <property name="bounds" value="135,27,0,0" />
+      </reference>
+    </reference>
+    <reference referencedUin="label:clientCardinality:design:link:::74gia31vn_l:v7fisycukhv0kuq_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="153,63,11,16" />
+    </reference>
+    <reference referencedUin="label:supplierCardinality:design:link:::74gia31vn_l:v7fisycukhv0kuq_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="187,63,23,16" />
+    </reference>
+  </view>
+</nodeSet>

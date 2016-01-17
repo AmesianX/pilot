@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="nth2wm8u7akruft_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Tetris:Tetris.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,290,87,77" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:Logic_Interface.TLI">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,166,249" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.Draw()">
+        <property name="bounds" value="-15,-56,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.on_Tick()">
+        <property name="bounds" value="-405,-166,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.GetObject()" />
+      <reference referencedUin="design:link:::ftip1dr4m_l">
+        <property name="sourceAnchor" value="176,110" />
+        <property name="targetAnchor" value="296,110" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.StartGame()">
+        <property name="bounds" value="55,-6,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.on_GameEnd()">
+        <property name="bounds" value="75,-26,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.Process_KeyDown()">
+        <property name="bounds" value="85,-16,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_field:src:Tetris:Logic_Interface.TLI.FGameStarted" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.SetGameStarted(System.Boolean)" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Logic_Interface.TLI.GameTimer" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Logic_Interface.TLI.BlockCell" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Logic_Interface.TLI.BlockShape" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.Process_KeyDown(System.UInt16)" />
+      <reference referencedUin="delphi:e_property:src:Tetris:Logic_Interface.TLI.GameStarted[]" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:UI_Interface.TUI">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="296,63,129,142" />
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.GetObject()" />
+      <reference referencedUin="design:link:::0ri4a855i_l">
+        <property name="sourceAnchor" value="296,157" />
+        <property name="targetAnchor" value="176,157" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.on_Start()">
+        <property name="bounds" value="35,-46,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.on_KeyDown()">
+        <property name="bounds" value="55,-46,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.GameEnd()">
+        <property name="bounds" value="84,-33,0,0" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:UI_Interface.TUI.on_KeyDown(System.UInt16)" />
+      <reference referencedUin="delphi:e_field:src:Tetris:UI_Interface.TUI._fmMain" />
+    </reference>
+  </view>
+</nodeSet>

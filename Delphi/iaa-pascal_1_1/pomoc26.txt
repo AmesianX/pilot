@@ -1,0 +1,10 @@
+program
+test
+;
+begin
+writeln
+(
+'hi'
+)
+;
+end.

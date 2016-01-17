@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	<mx:Button x="139" y="157" label="Button" click="on_ButtonClick()"/>
+    <mx:HTTPService id="httpHello" method="get" resultFormat="e4x" url="{urlHello}" result="on_HelloResult(event)" fault="on_HelloResult(event)"/>
+    
+    <mx:Script>
+		<![CDATA[
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.controls.Alert;
+			[Bindable] private var urlHello : String = "http://pilot.wowip.kr/Hello.php";
+			
+			private var HttpLoader : HTTPService = new HTTPService(); 
+			
+			private function on_ButtonClick():void 
+			{
+//				httpHello.send(null);
+				
+				HttpLoader.method = "get";
+				HttpLoader.url = "http://pilot.wowip.kr/Hello.php";
+				HttpLoader.addEventListener(ResultEvent.RESULT, on_HelloResult);
+				HttpLoader.addEventListener(FaultEvent.FAULT, on_HelloFault);
+				HttpLoader.send(null); 
+			}
+
+			private function on_HelloResult(event:Event):void
+			{
+				mx.controls.Alert.show(event.target.lastResult);	
+			}
+
+			private function on_HelloFault(event:Event):void
+			{
+				mx.controls.Alert.show(event.toString());	
+			}
+		]]>
+	</mx:Script>
+</mx:Application>

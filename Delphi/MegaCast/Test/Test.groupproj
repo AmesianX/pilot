@@ -1,0 +1,74 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{63822f8f-e0e7-4c19-bb03-00ff858d1eb0}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="BlockBuffer\BlockBufferTest.dproj" />
+    <Projects Include="BlockGrid\BlockGridTest.dproj" />
+    <Projects Include="FrameSlice\FrameSliceTest.dproj" />
+    <Projects Include="Recorder\RecorderTest.dproj" />
+    <Projects Include="ScreenShot\ScreenShotTest.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BlockBufferTest">
+    <MSBuild Projects="BlockBuffer\BlockBufferTest.dproj" Targets="" />
+  </Target>
+  <Target Name="BlockBufferTest:Clean">
+    <MSBuild Projects="BlockBuffer\BlockBufferTest.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="BlockBufferTest:Make">
+    <MSBuild Projects="BlockBuffer\BlockBufferTest.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ScreenShotTest">
+    <MSBuild Projects="ScreenShot\ScreenShotTest.dproj" Targets="" />
+  </Target>
+  <Target Name="ScreenShotTest:Clean">
+    <MSBuild Projects="ScreenShot\ScreenShotTest.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ScreenShotTest:Make">
+    <MSBuild Projects="ScreenShot\ScreenShotTest.dproj" Targets="Make" />
+  </Target>
+  <Target Name="FrameSliceTest">
+    <MSBuild Projects="FrameSlice\FrameSliceTest.dproj" Targets="" />
+  </Target>
+  <Target Name="FrameSliceTest:Clean">
+    <MSBuild Projects="FrameSlice\FrameSliceTest.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="FrameSliceTest:Make">
+    <MSBuild Projects="FrameSlice\FrameSliceTest.dproj" Targets="Make" />
+  </Target>
+  <Target Name="BlockGridTest">
+    <MSBuild Projects="BlockGrid\BlockGridTest.dproj" Targets="" />
+  </Target>
+  <Target Name="BlockGridTest:Clean">
+    <MSBuild Projects="BlockGrid\BlockGridTest.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="BlockGridTest:Make">
+    <MSBuild Projects="BlockGrid\BlockGridTest.dproj" Targets="Make" />
+  </Target>
+  <Target Name="RecorderTest">
+    <MSBuild Projects="Recorder\RecorderTest.dproj" Targets="" />
+  </Target>
+  <Target Name="RecorderTest:Clean">
+    <MSBuild Projects="Recorder\RecorderTest.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="RecorderTest:Make">
+    <MSBuild Projects="Recorder\RecorderTest.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BlockBufferTest;ScreenShotTest;FrameSliceTest;BlockGridTest;RecorderTest" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="BlockBufferTest:Clean;ScreenShotTest:Clean;FrameSliceTest:Clean;BlockGridTest:Clean;RecorderTest:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="BlockBufferTest:Make;ScreenShotTest:Make;FrameSliceTest:Make;BlockGridTest:Make;RecorderTest:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder._fmMain" Type="System.String" Value="_fmMain" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.HtmlView" Type="System.String" Value="HtmlView" Category="General" IsBrowsable="False" />
+</TgConfig>

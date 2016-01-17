@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model name="Step_01" id="Step_01" language="design">
+  <Diagram name="Main" id="ID=4" metaclass="Class Diagram" file="Main.txvClassDiagram20.html">
+    <DiagramReference id="ID=8" element="ID=6" metaclass="Class">
+      <Property name="Persistent">False</Property>
+      <Property name="Final">False</Property>
+      <Property name="Abstract">False</Property>
+      <DiagramReference id="ID=18" element="ID=17" metaclass="Association">
+        <Property name="Supplier">TCrystal</Property>
+        <Property name="Client Union">False</Property>
+        <Property name="Client Derived">False</Property>
+        <Property name="Client Navigable">unspecified navigability</Property>
+        <Property name="Supplier Multiplicity">0..*</Property>
+        <Property name="Client Unique">False</Property>
+        <Property name="Client Ordered">False</Property>
+        <Property name="Client Visibility">&lt;undefined&gt;</Property>
+        <Property name="Client Multiplicity">1</Property>
+        <Property name="Client">TJawBorad</Property>
+        <Property name="Supplier Derived">False</Property>
+        <Property name="Supplier Unique">False</Property>
+        <Property name="Supplier Ordered">False</Property>
+        <Property name="Supplier Visibility">&lt;undefined&gt;</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Type">aggregation</Property>
+        <Property name="Supplier Union">False</Property>
+        <Property name="Supplier Navigable">unspecified navigability</Property>
+      </DiagramReference>
+    </DiagramReference>
+    <DiagramReference id="ID=11" element="ID=9" metaclass="Class">
+      <Property name="Persistent">False</Property>
+      <Property name="Final">False</Property>
+      <Property name="Abstract">False</Property>
+    </DiagramReference>
+  </Diagram>
+  <Classifier name="TCrystal" id="ID=9" type="Class" visibility="package">
+    <Property name="Persistent">False</Property>
+    <Property name="Final">False</Property>
+    <Property name="Abstract">False</Property>
+    <Uses />
+    <Field fieldType="Field" elementName="Selected" id="ID=48" type="Boolean" isPrimitive="true" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Type">Boolean</Property>
+      <Property name="Readonly">False</Property>
+      <Property name="Union">False</Property>
+      <Property name="Derived">False</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <Property name="Aggregation Kind">none</Property>
+    </Field>
+    <Field fieldType="Field" elementName="CrystalType" id="ID=51" type="TCrystalType" isPrimitive="true" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Type">TCrystalType</Property>
+      <Property name="Readonly">False</Property>
+      <Property name="Union">False</Property>
+      <Property name="Derived">False</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <Property name="Aggregation Kind">none</Property>
+    </Field>
+    <Field fieldType="Field" elementName="X" id="ID=72" type="Integer" isPrimitive="true" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Type">Integer</Property>
+      <Property name="Readonly">False</Property>
+      <Property name="Union">False</Property>
+      <Property name="Derived">False</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <Property name="Aggregation Kind">none</Property>
+    </Field>
+    <Field fieldType="Field" elementName="Y" id="ID=75" type="Integer" isPrimitive="true" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Type">Integer</Property>
+      <Property name="Readonly">False</Property>
+      <Property name="Union">False</Property>
+      <Property name="Derived">False</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <Property name="Aggregation Kind">none</Property>
+    </Field>
+  </Classifier>
+  <Classifier name="TJawBorad" id="ID=6" type="Class" visibility="package">
+    <Property name="Persistent">False</Property>
+    <Property name="Final">False</Property>
+    <Property name="Abstract">False</Property>
+    <Field fieldType="Field" elementName="Crystals" id="ID=57" type="TCrystals" isPrimitive="true" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Type">TCrystals</Property>
+      <Property name="Readonly">False</Property>
+      <Property name="Union">False</Property>
+      <Property name="Derived">False</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <Property name="Aggregation Kind">none</Property>
+    </Field>
+    <Field fieldType="Field" elementName="Point" id="ID=69" type="Integer" isPrimitive="true" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Type">Integer</Property>
+      <Property name="Readonly">False</Property>
+      <Property name="Union">False</Property>
+      <Property name="Derived">False</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <Property name="Aggregation Kind">none</Property>
+    </Field>
+    <Field fieldType="Field" elementName="CanClick" id="ID=81" type="Boolean" isPrimitive="true" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Type">Boolean</Property>
+      <Property name="Readonly">False</Property>
+      <Property name="Union">False</Property>
+      <Property name="Derived">False</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <Property name="Aggregation Kind">none</Property>
+    </Field>
+    <Method id="ID=27" name="Clear" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Query">False</Property>
+      <Property name="Owned rule language">OCL</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <ReturnType id="ID=27" type="" isPrimitive="true" />
+    </Method>
+    <Method id="ID=30" name="Start" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Query">False</Property>
+      <Property name="Owned rule language">OCL</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <ReturnType id="ID=30" type="" isPrimitive="true" />
+    </Method>
+    <Method id="ID=66" name="GoDown" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Query">False</Property>
+      <Property name="Owned rule language">OCL</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <ReturnType id="ID=66" type="" isPrimitive="true" />
+    </Method>
+    <Method id="ID=78" name="Draw" visibility="public">
+      <Property name="Final">False</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Query">False</Property>
+      <Property name="Owned rule language">OCL</Property>
+      <Property name="Ordered">False</Property>
+      <Property name="Unique">False</Property>
+      <Property name="Static">False</Property>
+      <ReturnType id="ID=78" type="" isPrimitive="true" />
+    </Method>
+    <Link targetName="Association1" id="ID=17" metaclass="Association" idref="ID=9">
+      <Property name="Supplier">TCrystal</Property>
+      <Property name="Client Union">False</Property>
+      <Property name="Client Derived">False</Property>
+      <Property name="Client Navigable">unspecified navigability</Property>
+      <Property name="Supplier Multiplicity">0..*</Property>
+      <Property name="Client Unique">False</Property>
+      <Property name="Client Ordered">False</Property>
+      <Property name="Client Visibility">&lt;undefined&gt;</Property>
+      <Property name="Client Multiplicity">1</Property>
+      <Property name="Client">TJawBorad</Property>
+      <Property name="Supplier Derived">False</Property>
+      <Property name="Supplier Unique">False</Property>
+      <Property name="Supplier Ordered">False</Property>
+      <Property name="Supplier Visibility">&lt;undefined&gt;</Property>
+      <Property name="Directed">False</Property>
+      <Property name="Type">aggregation</Property>
+      <Property name="Supplier Union">False</Property>
+      <Property name="Supplier Navigable">unspecified navigability</Property>
+    </Link>
+    <Uses />
+  </Classifier>
+</Model>

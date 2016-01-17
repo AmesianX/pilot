@@ -1,0 +1,25 @@
+object fmmsScreen: TfmmsScreen
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'fmmsScreen'
+  ClientHeight = 328
+  ClientWidth = 570
+  Color = clBlack
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnMouseEnter = FormMouseEnter
+  OnMouseLeave = FormMouseLeave
+  OnMouseMove = FormMouseMove
+  OnPaint = FormPaint
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+end

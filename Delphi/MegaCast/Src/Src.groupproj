@@ -1,0 +1,54 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{27d54908-5bfa-425b-a61c-92e43de1ebf2}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="Receiver\Receiver.dproj" />
+    <Projects Include="Sender\Sender.dproj" />
+    <Projects Include="Server\Server.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Sender">
+    <MSBuild Projects="Sender\Sender.dproj" Targets="" />
+  </Target>
+  <Target Name="Sender:Clean">
+    <MSBuild Projects="Sender\Sender.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Sender:Make">
+    <MSBuild Projects="Sender\Sender.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Server">
+    <MSBuild Projects="Server\Server.dproj" Targets="" />
+  </Target>
+  <Target Name="Server:Clean">
+    <MSBuild Projects="Server\Server.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Server:Make">
+    <MSBuild Projects="Server\Server.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Receiver">
+    <MSBuild Projects="Receiver\Receiver.dproj" Targets="" />
+  </Target>
+  <Target Name="Receiver:Clean">
+    <MSBuild Projects="Receiver\Receiver.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Receiver:Make">
+    <MSBuild Projects="Receiver\Receiver.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Sender;Server;Receiver" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Sender:Clean;Server:Clean;Receiver:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Sender:Make;Server:Make;Receiver:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

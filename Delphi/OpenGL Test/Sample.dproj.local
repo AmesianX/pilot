@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.651,C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.dfm=D:\Projects\Pilot\Delphi\dgl Test\_fmMain.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.150,C:\Users\Ryu\Documents\RAD Studio\Projects\Project1.dproj=D:\Projects\Pilot\Delphi\dgl Test\Sample.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.651,C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas=D:\Projects\Pilot\Delphi\dgl Test\_fmMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.576,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.330,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

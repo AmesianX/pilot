@@ -1,0 +1,31 @@
+object fmDragExit: TfmDragExit
+  Left = 0
+  Top = 0
+  Caption = 'fmDragExit'
+  ClientHeight = 94
+  ClientWidth = 116
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object SpeedButton1: TSpeedButton
+    Left = 0
+    Top = 0
+    Width = 116
+    Height = 94
+    Align = alClient
+    Caption = #54869#51064
+    OnClick = SpeedButton1Click
+    ExplicitLeft = 160
+    ExplicitTop = 64
+    ExplicitWidth = 23
+    ExplicitHeight = 22
+  end
+end

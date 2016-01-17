@@ -1,0 +1,26 @@
+Zakres funkcjonalny:
+- deklaracja zmiennych globalnych
+- mozliwe typy zmiennych: integer, double
+- operacje wejscia | wyjscia (read | readln, write | writeln)
+- operacje arytmetyczne: dodawanie, odejmowanie, mnozenie, dzielenie, potegowanie
+- operacja przypisania :=
+- operacje porownania < | > | = | <> | <= | >=
+- nawiasy ( )
+- komentarz { }
+- separatory ; | .
+- operacje warunkowe if ... then
+- mozna zagniezdzac instrukcje if ... then
+- petla for ... to ... do
+- mozna uzywac petli zagniezdzonych
+- poczatek/koniec bloku begin | end
+- mozna wykonywac dowolne wyrazenia arytmetyczne z nawiasami
+- w operacjach arytmetycznych mozna uzywac nastepujacych funkcji matematycznych: sin, cos, tan cotan, arcsin, 
+  arccos, arctan, ln, exp, sqrt
+- mozna stosowac wciecia
+- nie wazna jest liczba bialych znakow oddzielajacych poszczegolne slowa/wyrazenia
+- moze wystepowac kilka instrukcji w jednej linii
+- read | readln | write | writeln realizuje pojedyncza operacjewejscia/wyjscia – nie mozna uzywac operatorow konkatenacji wewnatrz operacji wejscia/wyjscia
+- nie mozna uzywac operatorow logicznych AND, OR, NOT
+- w instrukcji if ... then nie moze byc nawiasow i warunkow zlozonych
+- miedzy slowami kluczowymi for i to, oraz to i do nie moze byc zlozonych przypisan
+- nie mozna stosowac zmiennych sterujacych petla po lewej stronie znaku przypisania wewnatrz bloku wykonywalnego petli

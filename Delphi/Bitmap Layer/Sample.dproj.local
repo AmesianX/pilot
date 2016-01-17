@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2014-10-24 15:28:26.671,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-10-24 15:28:34.488,D:\Projects\Pilot\Delphi\Bitmap Layer\_fmMain.pas=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-10-24 15:28:34.488,D:\Projects\Pilot\Delphi\Bitmap Layer\_fmMain.dfm=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014-10-24 15:28:37.644,D:\Projects\Pilot\Delphi\Bitmap Layer\Sample.dproj=C:\Users\Ryu\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

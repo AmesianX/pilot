@@ -1,0 +1,1 @@
+Sender.exe station1.megachannel.co.kr 1 Ryu 1234

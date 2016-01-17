@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.494,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.538,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.550,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.771,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.234,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.868,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.762,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-04-02 10:46:26.118,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-04-02 10:46:31.521,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014-04-02 10:46:42.533,D:\Projects\Pilot\Delphi\CPU 사용률\_fmMain.pas=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014-04-02 10:46:54.077,D:\Projects\Pilot\Delphi\CPU 사용률\uCpuUsage.pas=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014-04-02 10:46:54.077,D:\Projects\Pilot\Delphi\CPU 사용률\uCpuUsage.dfm=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014-04-02 10:46:56.617,D:\Projects\Pilot\Delphi\CPU 사용률\Sample.dproj=C:\Users\Ryu\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014-04-02 10:47:20.924,D:\Projects\Pilot\Delphi\CPU 사용률\CpuUsage.pas=D:\Projects\Pilot\Delphi\CPU 사용률\_fmMain.pas</Transaction>
+    <Transaction>2014-04-02 10:47:29.358,D:\Projects\Pilot\Delphi\CPU 사용률\_fmMain.pas=D:\Projects\Pilot\Delphi\CPU 사용률\uCpuUsage.pas</Transaction>
+    <Transaction>2014-04-02 10:47:29.358,D:\Projects\Pilot\Delphi\CPU 사용률\_fmMain.dfm=D:\Projects\Pilot\Delphi\CPU 사용률\uCpuUsage.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

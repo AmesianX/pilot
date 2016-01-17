@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\Method_R_CreateFormView]
+@="Method-R CreateFormView"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\Method_R_CreateFormView\command]
+@="C:\\Method-R\\Bin\\CreateFormView.exe %1"

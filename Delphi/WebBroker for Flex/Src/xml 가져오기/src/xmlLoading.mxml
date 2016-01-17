@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" initialize="do_Init()">
+	
+    <mx:Script>
+		<![CDATA[
+			import ryu.web.TWebBroker;
+			import mx.controls.Alert;
+			
+			[Bindable] private var FWebBroker : TWebBroker = new TWebBroker();
+			
+			private function do_Init():void 
+			{
+				FWebBroker.Get("http://megatube.wowip.kr/flex/notice/notice.php");
+			}
+		]]>
+	</mx:Script>
+
+	<mx:DataGrid id="dgUserRequest" width="100%" height="100%" dataProvider="{FWebBroker.DataSource}">
+		<mx:columns>
+			<mx:DataGridColumn headerText="날짜" dataField="Date"/>
+			<mx:DataGridColumn headerText="제목" dataField="Title"/>
+		</mx:columns>
+	</mx:DataGrid>
+   
+</mx:Application>

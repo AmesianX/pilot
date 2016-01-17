@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.Tetris" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.Logic_Interface" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.UI_Interface" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.frmMain" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.BlockCell" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.BlockShape" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.GameTimer" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder._frmMain" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.Block" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.RotateBlocks" Type="System.String" Value="" IsBrowsable="False" />
+  <Option Name="namespaceFolder.CanvasPanel" Type="System.String" Value="" IsBrowsable="False" />
+</TgConfig>

@@ -1,0 +1,68 @@
+This file contains a list of all bugfixes, additions and enhancements to NativeJpg.
+
+Maintained by N. Haeck (SimDesign BV)
+
+! = bugfix
+* = enhancement
++ = addition
+
+Version 1.15
+* Changed headers: NativeJpg allowed to use and/or change according to the 
+  LICENSE
+
+Version 1.14 (18Feb2010)
+* Verified source for D2010
++ NativeJpg is now "open-source"
+
+Version 1.12 (16Jun2008)
+! Fixed YCbCr to RGB colour conversion
++ Added optional support for LittleCMS (www.littlecms.com)
+
+Version 1.11 (20Feb2008)
+! Lock canvas when using canvas.draw (NativeJpg.pas)
+
+Version 1.10 (12Feb2008)
+* Load with tilemode when possible in TsdJpegGraphic (saves memory)
+* Exceptions replaced by EInvalidGraphic where it makes sense
+! Fixed bug in coder property HasCoefs
+
+Version 1.09 (18Dec2007)
+* Added trial for D2007
+
+Version 1.08 (01Dec2007)
++ Added feature to save with default Huffman tables
++ Added SaveToStreamStripByStrip(): allows to save a jpeg strip by strip, 
+  to avoid holding the complete bitmap in memory when saving
+* Updated tiledemo to show how to generate an image and save strip-by-strip.
+
+Version 1.07 (30Nov2007)
++ Added loTileMode load option, to allow loading random-access tiles from the jpeg
+  file. This mode only works for baseline jpegs.
++ Added TileDemo as an example on how to use the random-access TileMode load option.
++ Added properties TsdJpegFormat.ImageWidth/ImageHeight: 
+  The dimensions of the original image (unscaled)
++ Added properties TsdJpegFormat.Width/Height:
+  The dimensions of the scaled image (so the size of the bitmap required to fully
+  display the image at its current scale).
+
+Version 1.06 (25Nov2007)
+! Fixed CMYK to RGB conversion (seems Adobe specific)
+
+Version 1.05 (16Nov2007)
+! Fixed YCCK to RGB conversion
+! Fixed problem with some grayscale defining 2x1 subsampling
+
+Version 1.04 (03Nov2007)
++ Added TsdFastMemStream
+* SaveToFile uses fast memory stream type
+
+Version 1.03 (30Oct2007)
+! RGB jpeg files now written/read correctly (invert RGB->BGR)
+
+Version 1.02 (22Oct2007)
+* Added ability to assign bitmap and then use SaveToFile/Stream. This version
+  implements the Forward DCT, building quantization tables, and quantizing the
+  coefficients.
+
+Version 1.00 (17May2007)
+- Initial release

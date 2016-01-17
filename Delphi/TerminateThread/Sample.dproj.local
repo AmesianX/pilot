@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.576,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015-01-01 01:28:53.627,=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015-01-01 01:37:25.788,D:\Projects\Pilot\Delphi\TerminateThread\_fmMain.pas=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015-01-01 01:37:25.788,D:\Projects\Pilot\Delphi\TerminateThread\_fmMain.dfm=C:\Users\Ryu\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2015-01-01 01:37:27.801,D:\Projects\Pilot\Delphi\TerminateThread\Sample.dproj=C:\Users\Ryu\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

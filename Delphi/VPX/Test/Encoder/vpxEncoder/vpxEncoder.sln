@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vpxEncoder", "vpxEncoder\vpxEncoder.vcxproj", "{D21D0DD0-0481-4DC7-9C8D-9C09F61D7741}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoZip", "VideoZip\VideoZip.vcxproj", "{F98781E7-D01B-448D-B318-C78400E7260B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D21D0DD0-0481-4DC7-9C8D-9C09F61D7741}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D21D0DD0-0481-4DC7-9C8D-9C09F61D7741}.Debug|Win32.Build.0 = Debug|Win32
+		{D21D0DD0-0481-4DC7-9C8D-9C09F61D7741}.Release|Win32.ActiveCfg = Release|Win32
+		{D21D0DD0-0481-4DC7-9C8D-9C09F61D7741}.Release|Win32.Build.0 = Release|Win32
+		{F98781E7-D01B-448D-B318-C78400E7260B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F98781E7-D01B-448D-B318-C78400E7260B}.Debug|Win32.Build.0 = Debug|Win32
+		{F98781E7-D01B-448D-B318-C78400E7260B}.Release|Win32.ActiveCfg = Release|Win32
+		{F98781E7-D01B-448D-B318-C78400E7260B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+Notacja Backusa-Naura
+<typy_zmiennych> ::= integer | real
+<deklaracja_zmiennych> ::= var
+<operacja_przypisania> ::= :=
+<separator_zdaniowy> ::= ;
+<separator_liczbowy> ::= .
+<operator_arytmetyczny> ::= + | - | * | / | ^
+<operator_porównania> ::= = |<|>|<>|<=|>= 
+<nawias> ::= ( | )
+<poczatek_komentarza> ::= {
+<koniec_komentarza> ::= }
+<poczatek_bloku> ::= begin
+<koniec_bloku> ::= end
+<operacja_wejscia_wyjscia> ::= read | readln | write | writeln
+<jesli> ::= if
+<to> ::= then
+<dopoki> ::= while
+<wykonuj> ::= do
+<separator_deklaracyjny> ::= :
+<tekst> ::= <litery> | <cyfry> | <znaki_specjalne> | tekst
+<litery> ::= a..z | A..Z
+<cyfry> ::= 0..9
+<znaki_specjalne> ::= ! | @ | # | $ | % | ^ | & | * | ( | ) | - | _ | = | [ | ] | ; | : | ‘ | „ | ` | ~ | , | < | . | > | ? | / | | | \ |
+<zmienna_globalna> ::= <nazwa> <separator_deklaracyjny><typ_zmiennej><separator_zdaniowy>
+<czytaj_pisz> ::= <operacja_wejscia_wyjscia><nawias><zmienna_globalna><nawias><separator_zdaniowy> <operacja_arytmetyczna> ::= <skladnik1><operator_arytmetyczy><skladnik1>
+<sk³adnik1> ::= <zmienna_globalna> | <liczba> | <funkcja_matematyczna> | <operacja_arytmetyczna>
+<funkcja_matematyczna> ::= sin | cos | tan | cotan | arcsin | arctan | arccos | ln | exp | sqrt
+<operacja_przypisania> ::= <zmienn_globalna><operator_przypisania><liczba> | <zmienna_globalna> <separator_zdaniowy> <operacja_porownania> ::= <zmienna_globalna> | <liczba><operator_porownania><zmienna_globalna> | <liczba>
+<komentarz> ::= <poczatek_komentarza><tekst><koniec_komentarza>
+<blok> ::= <poczatek_bloku><operacje><koniec_bloku><separator_zdaniowy>
+<petla> ::= <dopóki><operacja_porownania><wykonuj><blok>
+<operacja_warunkowa> ::= <jeœli><operacja_porownania><to><blok>
+<operacja_pusta> ::= <separator_zdaniowy>
+<operacje> ::= <czytaj_pisz> | <operacja_arytmetyczna> | <operacja_przypisania> | <operacja_porownania> | <operacja_warunkowa> | <petla> | <operacja_pusta><operacje>

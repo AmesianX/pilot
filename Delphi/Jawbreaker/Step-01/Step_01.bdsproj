@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Design.Personality</Option>
+      <Option Name="ProjectType">Application</Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{F42A1531-7F3F-4F2F-88BE-EADA392CC86A}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Design.Personality>
+    <Options>
+      <OptionsSet Name="">
+        <Together>
+          <Together Name="UMLVersion">2.0</Together>
+        </Together>
+      </OptionsSet>
+    </Options>
+    
+    
+    <FileList>
+      <File FileName="ModelSupport_Step_01\default.txaPackage" ContainerId="TogetherDiagram" ModuleName="default"/>
+      <File FileName="ModelSupport_Step_01\default.txvClassDiagram20" ContainerId="TogetherDiagram" ModuleName="default"/>
+      <File FileName="ModelSupport_Step_01\Class Diagram.txvClassDiagram20" ContainerId="TogetherDiagram" ModuleName="Class Diagram"/>
+      <File FileName="ModelSupport_Step_01\Main.txvClassDiagram20" ContainerId="TogetherDiagram" ModuleName="Main"/>
+      <File FileName="ModelSupport_Step_01\그림을 그리는 객체.txvClassDiagram20" ContainerId="TogetherDiagram" ModuleName="그림을 그리는 객체"/>
+    </FileList>
+  </Design.Personality>
+  <ModelSupport>True</ModelSupport>
+</BorlandProject>

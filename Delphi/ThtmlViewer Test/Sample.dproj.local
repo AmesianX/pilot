@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.514,D:\Projects\Pilot\Delphi\ThtmlViewer Test\Sample.dproj=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.139,D:\Projects\Pilot\Delphi\ThtmlViewer Test\_fmMain.dfm=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.139,D:\Projects\Pilot\Delphi\ThtmlViewer Test\_fmMain.pas=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.302,=D:\Projects\Pilot\Delphi\ThtmlViewer Test\System.Classes.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.408,=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.186,=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.085,D:\Projects\Pilot\Delphi\ThtmlViewer Test\System.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.456,=D:\Projects\Pilot\Delphi\ThtmlViewer Test\System.pas</Transaction>
+  </Transactions>
+</BorlandProject>

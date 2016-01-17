@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="nzjn0cvmo_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Tetris:Block.TBlock">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,110,219" />
+      <reference referencedUin="delphi:e_property:src:Tetris:Block.TBlock.Width[]">
+        <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.Width[].get_Width" />
+      </reference>
+      <reference referencedUin="delphi:e_property:src:Tetris:Block.TBlock.Height[]">
+        <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.Height[].get_Height" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.GetHeight()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.GetWidth()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Block.TBlock.X" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Block.TBlock.Y" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.Draw()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.DropDown()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.MoveRight()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.MoveLeft()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:Block.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="139,1,87,77" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.408,=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015-10-03 19:58:46.805,=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015-10-03 20:08:19.745,D:\Projects\Pilot\Delphi\CDN 실제 주소 얻어오기\_fmMain.dfm=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2015-10-03 20:08:19.745,D:\Projects\Pilot\Delphi\CDN 실제 주소 얻어오기\_fmMain.pas=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015-10-03 20:08:22.070,D:\Projects\Pilot\Delphi\CDN 실제 주소 얻어오기\Sample.dproj=C:\Users\종택\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

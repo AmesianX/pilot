@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="hfohshz1n_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Tetris:BlockCell.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="392,10,109,77" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:BlockCell.TBlockCell">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="78,377,200,172" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.Draw()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.Clear()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.BlockLanding()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:BlockCell.TBlockCell.FCells" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.CheckCollision(System.UInt16)" />
+      <reference referencedUin="delphi:l_ast:src:Tetris:BlockCell.TBlockCell.FCells">
+        <property name="sourceAnchor" value="278,463" />
+        <property name="targetAnchor" value="358,463" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.Create()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.do_CheckBlocksInCells(Classes.TList)" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.CheckCollision(Classes.TList,System.UInt16)" />
+      <reference referencedUin="delphi:e_method:src:Tetris:BlockCell.TBlockCell.BlockLanding(Classes.TList)" />
+      <reference referencedUin="design:link:::1yh8df6ege5l4jj_l">
+        <property name="sourceAnchor" value="94,377" />
+        <property name="targetAnchor" value="94,182" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:Block.TBlock">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="358,354,110,219" />
+      <reference referencedUin="delphi:e_property:src:Tetris:Block.TBlock.Width[]">
+        <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.Width[].get_Width" />
+      </reference>
+      <reference referencedUin="delphi:e_property:src:Tetris:Block.TBlock.Height[]">
+        <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.Height[].get_Height" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.GetHeight()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.GetWidth()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Block.TBlock.X" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Block.TBlock.Y" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.Draw()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.DropDown()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.MoveRight()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Block.TBlock.MoveLeft()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:BlockCell.TFLI">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,101,116,81" />
+      <reference referencedUin="delphi:l_gnt:src:Tetris:BlockCell.TFLI:Logic_Interface.TLI">
+        <property name="sourceAnchor" value="126,141" />
+        <property name="targetAnchor" value="206,141" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Tetris:Logic_Interface.TLI">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="206,10,166,264" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.GetGameStarted()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.on_GameEnd()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.on_Tick()" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Logic_Interface.TLI.GameTimer" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Logic_Interface.TLI.BlockCell" />
+      <reference referencedUin="delphi:e_field:src:Tetris:Logic_Interface.TLI.BlockShape" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.Create()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.GetObject()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.StartGame()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.Draw()" />
+      <reference referencedUin="delphi:e_method:src:Tetris:Logic_Interface.TLI.Process_KeyDown(System.UInt16)" />
+      <reference referencedUin="delphi:e_property:src:Tetris:Logic_Interface.TLI.GameStarted[]" />
+      <reference referencedUin="delphi:l_ast:src:Tetris:Logic_Interface.TLI.BlockCell">
+        <property name="sourceAnchor" value="242,274" />
+        <property name="targetAnchor" value="242,377" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+  <link uin="1yh8df6ege5l4jj_l">
+    <property name="$metaclass" value="Dependency Link" />
+    <property name="$name" value="Dependency Link1" />
+    <participant referencedUin="delphi:e_class:src:Tetris:BlockCell.TBlockCell" role="Client" />
+    <participant referencedUin="delphi:e_class:src:Tetris:BlockCell.TFLI" role="Supplier" />
+  </link>
+</nodeSet>
