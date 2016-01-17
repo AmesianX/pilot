@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Async Echo", "Async Echo\Async Echo.vcxproj", "{A568E199-48A9-484A-BA80-49D23B55014F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A568E199-48A9-484A-BA80-49D23B55014F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A568E199-48A9-484A-BA80-49D23B55014F}.Debug|Win32.Build.0 = Debug|Win32
+		{A568E199-48A9-484A-BA80-49D23B55014F}.Release|Win32.ActiveCfg = Release|Win32
+		{A568E199-48A9-484A-BA80-49D23B55014F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

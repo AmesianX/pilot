@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PortForward", "PortForward\PortForward.vcxproj", "{A9E64460-CA49-4547-B7E3-A9083A3DAC5C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libPortForward", "libPortForward\libPortForward.vcxproj", "{380EC5A0-D51A-4ABD-B2A0-AD02576F435C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9E64460-CA49-4547-B7E3-A9083A3DAC5C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9E64460-CA49-4547-B7E3-A9083A3DAC5C}.Debug|Win32.Build.0 = Debug|Win32
+		{A9E64460-CA49-4547-B7E3-A9083A3DAC5C}.Release|Win32.ActiveCfg = Release|Win32
+		{A9E64460-CA49-4547-B7E3-A9083A3DAC5C}.Release|Win32.Build.0 = Release|Win32
+		{380EC5A0-D51A-4ABD-B2A0-AD02576F435C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{380EC5A0-D51A-4ABD-B2A0-AD02576F435C}.Debug|Win32.Build.0 = Debug|Win32
+		{380EC5A0-D51A-4ABD-B2A0-AD02576F435C}.Release|Win32.ActiveCfg = Release|Win32
+		{380EC5A0-D51A-4ABD-B2A0-AD02576F435C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

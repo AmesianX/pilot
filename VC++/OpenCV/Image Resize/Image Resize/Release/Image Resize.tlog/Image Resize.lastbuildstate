@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=Intel C++ Compiler XE 15.0:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+Release|Win32|D:\Projects\Pilot\VC++\OpenCV\Image Resize\|
